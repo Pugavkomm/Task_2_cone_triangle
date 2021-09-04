@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="class_curves_1_1_curve_vector" kind="class" language="C++" prot="public">
+    <compoundname>Curves::CurveVector</compoundname>
+    <basecompoundref refid="class_curves_1_1_curve" prot="public" virt="non-virtual">Curves::Curve&lt; T &gt;</basecompoundref>
+    <templateparamlist>
+      <param>
+        <type>typename T</type>
+      </param>
+    </templateparamlist>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Curves::CurveVector&lt; T &gt;</label>
+        <link refid="class_curves_1_1_curve_vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Curves::Curve&lt; T &gt;</label>
+        <link refid="class_curves_1_1_curve"/>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Curves::CurveVector&lt; T &gt;</label>
+        <link refid="class_curves_1_1_curve_vector"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Curves::Curve&lt; T &gt;</label>
+        <link refid="class_curves_1_1_curve"/>
+      </node>
+    </collaborationgraph>
+    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/CurveVector.h" line="8" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/CurveVector.h" bodystart="8" bodyend="10"/>
+    <listofallmembers>
+      <member refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" prot="public" virt="non-virtual"><scope>Curves::CurveVector</scope><name>Curve</name></member>
+      <member refid="class_curves_1_1_curve_1a7290d7306cbf2d250d99cac5c7a39646" prot="public" virt="non-virtual"><scope>Curves::CurveVector</scope><name>Curve</name></member>
+      <member refid="class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb" prot="public" virt="non-virtual"><scope>Curves::CurveVector</scope><name>get_direction</name></member>
+      <member refid="class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31" prot="public" virt="non-virtual"><scope>Curves::CurveVector</scope><name>get_origin</name></member>
+      <member refid="class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30" prot="public" virt="non-virtual"><scope>Curves::CurveVector</scope><name>set_direction</name></member>
+      <member refid="class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece" prot="public" virt="non-virtual"><scope>Curves::CurveVector</scope><name>set_origin</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

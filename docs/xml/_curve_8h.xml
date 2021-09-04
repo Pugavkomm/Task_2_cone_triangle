@@ -1,0 +1,165 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="_curve_8h" kind="file" language="C++">
+    <compoundname>Curve.h</compoundname>
+    <includes refid="_point_8h" local="yes">Point.h</includes>
+    <includes local="no">cmath</includes>
+    <includedby refid="_curve_vector_8h" local="yes">CurveVector.h</includedby>
+    <includedby refid="_line_8h" local="yes">Line.h</includedby>
+    <includedby refid="main_8cpp" local="yes">main.cpp</includedby>
+    <incdepgraph>
+      <node id="8">
+        <label>cmath</label>
+      </node>
+      <node id="5">
+        <label>stdexcept</label>
+      </node>
+      <node id="6">
+        <label>string</label>
+      </node>
+      <node id="2">
+        <label>Point.h</label>
+        <link refid="_point_8h"/>
+        <childnode refid="3" relation="include">
+        </childnode>
+        <childnode refid="4" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="6" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="7">
+        <label>vector</label>
+      </node>
+      <node id="3">
+        <label>iostream</label>
+      </node>
+      <node id="1">
+        <label>Curve.h</label>
+        <link refid="_curve_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>consts.h</label>
+        <link refid="consts_8h"/>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>CurveVector.h</label>
+        <link refid="_curve_vector_8h_source"/>
+      </node>
+      <node id="1">
+        <label>Curve.h</label>
+        <link refid="_curve_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+      <node id="4">
+        <label>Ellipse.h</label>
+        <link refid="_ellipse_8h_source"/>
+      </node>
+      <node id="3">
+        <label>Line.h</label>
+        <link refid="_line_8h_source"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="class_curves_1_1_curve" prot="public">Curves::Curve</innerclass>
+    <innernamespace refid="namespace_curves">Curves</innernamespace>
+      <sectiondef kind="define">
+      <memberdef kind="define" id="_curve_8h_1a5e84628ccf5bc23ccfac181b077616ae" prot="public" static="no">
+        <name>CURVE</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Curve.h" line="13" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Curve.h" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+<para><simplesect kind="author"><para>your name (<ulink url="mailto:you@domain.com">you@domain.com</ulink>) </para>
+</simplesect>
+<simplesect kind="version"><para>0.1 </para>
+</simplesect>
+<simplesect kind="date"><para>2021-09-03</para>
+</simplesect>
+<simplesect kind="copyright"><para>Copyright (c) 2021 </para>
+</simplesect>
+</para>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="normal"></highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="preprocessor">#pragma<sp/>once</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="preprocessor">#ifndef<sp/>CURVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="preprocessor">#define<sp/>CURVE</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_point_8h" kindref="compound">Point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;cmath&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight></codeline>
+<codeline lineno="17" refid="namespace_curves" refkind="compound"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_curves" kindref="compound">Curves</ref><sp/>{</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="23" refid="class_curves_1_1_curve" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_curves_1_1_curve" kindref="compound">Curve</ref>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>origin;<sp/></highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>direction;<sp/></highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal">:</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" kindref="member">Curve</ref>();</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" kindref="member">Curve</ref>(<ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>origin,<sp/><ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>direction);</highlight></codeline>
+<codeline lineno="48"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece" kindref="member">set_origin</ref>(<ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>origin);</highlight></codeline>
+<codeline lineno="54"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30" kindref="member">set_direction</ref>(<ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>direction);</highlight></codeline>
+<codeline lineno="60"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/><ref refid="class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31" kindref="member">get_origin</ref>();</highlight></codeline>
+<codeline lineno="66"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/><ref refid="class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb" kindref="member">get_direction</ref>();</highlight></codeline>
+<codeline lineno="67"><highlight class="normal"><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="68"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="69"><highlight class="normal"></highlight><highlight class="preprocessor">#endif</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="70"><highlight class="normal"></highlight></codeline>
+<codeline lineno="71"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_curves" kindref="compound">Curves</ref>{</highlight></codeline>
+<codeline lineno="72"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="73" refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" kindref="member">Curve&lt;T&gt;::Curve</ref>(){</highlight></codeline>
+<codeline lineno="74"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>origin<sp/>=<sp/><ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref>();</highlight></codeline>
+<codeline lineno="75"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="76"><highlight class="normal"></highlight></codeline>
+<codeline lineno="77"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="78" refid="class_curves_1_1_curve_1a7290d7306cbf2d250d99cac5c7a39646" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" kindref="member">Curve&lt;T&gt;::Curve</ref>(<ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>origin,<sp/><ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>direction){</highlight></codeline>
+<codeline lineno="79"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;set_origin(origin);</highlight></codeline>
+<codeline lineno="80"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;set_direction(origin);</highlight></codeline>
+<codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="82"><highlight class="normal"></highlight></codeline>
+<codeline lineno="83"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="84" refid="class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece" kindref="member">Curve&lt;T&gt;::set_origin</ref>(<ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>origin){</highlight></codeline>
+<codeline lineno="85"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;origin<sp/>=<sp/>origin;<sp/></highlight></codeline>
+<codeline lineno="86"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="87"><highlight class="normal"></highlight></codeline>
+<codeline lineno="88"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="89" refid="class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30" kindref="member">Curve&lt;T&gt;::set_direction</ref>(<ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/>direction){</highlight></codeline>
+<codeline lineno="90"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>this-&gt;direction<sp/>=<sp/>direction;<sp/></highlight></codeline>
+<codeline lineno="91"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="92"><highlight class="normal"></highlight></codeline>
+<codeline lineno="93"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="94"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="95" refid="class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/><ref refid="class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31" kindref="member">Curve&lt;T&gt;::get_origin</ref>(){</highlight></codeline>
+<codeline lineno="96"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>origin;<sp/></highlight></codeline>
+<codeline lineno="97"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="98"><highlight class="normal"></highlight></codeline>
+<codeline lineno="99"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">template</highlight><highlight class="normal"><sp/>&lt;</highlight><highlight class="keyword">typename</highlight><highlight class="normal"><sp/>T&gt;</highlight></codeline>
+<codeline lineno="100" refid="class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">Point&lt;T&gt;</ref><sp/><ref refid="class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb" kindref="member">Curve&lt;T&gt;::get_direction</ref>(){</highlight></codeline>
+<codeline lineno="101"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>direction;<sp/></highlight></codeline>
+<codeline lineno="102"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="103"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="104"><highlight class="normal"></highlight></codeline>
+    </programlisting>
+    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Curve.h"/>
+  </compounddef>
+</doxygen>

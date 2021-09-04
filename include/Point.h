@@ -10,10 +10,12 @@
 #include <stdexcept>
 #include <string>
 #include <vector>
-/**
-     * @brief Point is point in DIM space
-     * 
-     */
+/*!
+ *  \addtogroup Curves
+ *  @{
+ */
+
+//! Generic Curves interfaces and implementations
 namespace Curves
 {
     template <typename T> 

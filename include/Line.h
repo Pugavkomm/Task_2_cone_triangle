@@ -4,6 +4,7 @@
 #include "Curve.h"
 #include "Point.h"
 #include <cmath>
+#include <string>
 
 namespace Curves{
     template <typename T>
@@ -13,7 +14,7 @@ namespace Curves{
         Line(Point<T> origin, Point<T> direction);
         virtual Point<T> derivative(double parameter);
         virtual Point<T> point_per_parameter(double parameter);
-        virtual string type();
+        virtual std::string type();
     };
 }
 #endif
@@ -41,7 +42,7 @@ namespace Curves{
     }
 
     template <typename T>
-    string Line<T>::type(){
+    std::string Line<T>::type(){
         return "Line";
     }
 }

@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_curves_1_1_line" xml:lang="en-US">
+<title>Curves::Line&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Curves::Line&lt; T &gt;</primary></indexterm>
+Inheritance diagram for Curves::Line&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_curves_1_1_line__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Curves::Line&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_curves_1_1_line__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_curves_1_1_line_1a449872d1dfc7831033676cbf52d4f3b1"/><emphasis role="strong">Line</emphasis> (<link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; origin, <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; direction)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43"/>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">derivative</emphasis> (double parameter)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453"/>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">point_per_parameter</emphasis> (double parameter)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74"/>virtual std::string <emphasis role="strong">type</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+Line.h</section>

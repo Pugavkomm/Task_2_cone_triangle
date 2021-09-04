@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="en-US">
+<title>Class List</title>
+Here are the classes, structs, unions and interfaces with brief descriptions:<link linkend="_class_curves_1_1_curve">Curves::Curve&lt; T &gt;</link>
+<para>Base class for curve hierarchy </para>
+<link linkend="_class_curves_1_1_curve_vector">Curves::CurveVector&lt; T &gt;</link><link linkend="_class_curves_1_1_ellipse">Curves::Ellipse&lt; T &gt;</link><link linkend="_class_curves_1_1_line">Curves::Line&lt; T &gt;</link><link linkend="_class_curves_1_1_point">Curves::Point&lt; T &gt;</link></section>

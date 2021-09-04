@@ -1,0 +1,86 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.1" xml:lang="en-US">
+  <compound refid="class_curves_1_1_curve" kind="class"><name>Curves::Curve</name>
+    <member refid="class_curves_1_1_curve_1afbf3902b2b9722cac00ba21e9759bf14" kind="variable"><name>origin</name></member>
+    <member refid="class_curves_1_1_curve_1a2fb02fa782f59708c0d9f14e4f69acb1" kind="variable"><name>direction</name></member>
+    <member refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" kind="function"><name>Curve</name></member>
+    <member refid="class_curves_1_1_curve_1a7290d7306cbf2d250d99cac5c7a39646" kind="function"><name>Curve</name></member>
+    <member refid="class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece" kind="function"><name>set_origin</name></member>
+    <member refid="class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30" kind="function"><name>set_direction</name></member>
+    <member refid="class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31" kind="function"><name>get_origin</name></member>
+    <member refid="class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb" kind="function"><name>get_direction</name></member>
+  </compound>
+  <compound refid="class_curves_1_1_curve_vector" kind="class"><name>Curves::CurveVector</name>
+  </compound>
+  <compound refid="class_curves_1_1_ellipse" kind="class"><name>Curves::Ellipse</name>
+    <member refid="class_curves_1_1_ellipse_1a4e698aedea1289212a0a48550ddf49e3" kind="function"><name>Ellipse</name></member>
+    <member refid="class_curves_1_1_ellipse_1a6dc9776af355574ddfe54ac601f2f47a" kind="function"><name>Ellipse</name></member>
+    <member refid="class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b" kind="function"><name>derivative</name></member>
+    <member refid="class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2" kind="function"><name>point_per_parameter</name></member>
+    <member refid="class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e" kind="function"><name>type</name></member>
+  </compound>
+  <compound refid="class_curves_1_1_line" kind="class"><name>Curves::Line</name>
+    <member refid="class_curves_1_1_line_1a9c7b60f218803c1925b79c874270e620" kind="function"><name>Line</name></member>
+    <member refid="class_curves_1_1_line_1a449872d1dfc7831033676cbf52d4f3b1" kind="function"><name>Line</name></member>
+    <member refid="class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43" kind="function"><name>derivative</name></member>
+    <member refid="class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453" kind="function"><name>point_per_parameter</name></member>
+    <member refid="class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74" kind="function"><name>type</name></member>
+  </compound>
+  <compound refid="class_curves_1_1_point" kind="class"><name>Curves::Point</name>
+    <member refid="group___curves_1ga4be7ea4cdf67b4012dfc3eeb7a83505b" kind="variable"><name>point</name></member>
+    <member refid="group___curves_1ga48f5ad3fb47ee313d4e98e442690af39" kind="function"><name>Point</name></member>
+    <member refid="group___curves_1ga936d7aaac56fc6e3656a6e491db9c95a" kind="function"><name>Point</name></member>
+    <member refid="group___curves_1ga402547dccd791ff753261fcb0c71c7fb" kind="function"><name>setPoint</name></member>
+    <member refid="group___curves_1ga4ad4c5096f93dcde96861fb6fe02589d" kind="function"><name>printPoint</name></member>
+    <member refid="group___curves_1ga62a20a6cd6bd25086d2290dadc453061" kind="function"><name>operator+</name></member>
+    <member refid="group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e" kind="function"><name>operator*</name></member>
+    <member refid="group___curves_1ga6770a6bfd2d0cbabccab64146cf7a123" kind="function"><name>operator*</name></member>
+    <member refid="group___curves_1ga3ca44f193f3c4b97784a9079aae8b28a" kind="function"><name>operator=</name></member>
+    <member refid="group___curves_1gaec5bfb35da7490af4de778c750079814" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="namespace_curves" kind="namespace"><name>Curves</name>
+    <member refid="group___curves_1gaaaf81fd51af159386715a87c96fa0726" kind="function"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="consts_8h" kind="file"><name>consts.h</name>
+    <member refid="consts_8h_1a589b8b9bfdf714f736059845d568b597" kind="variable"><name>DIM</name></member>
+  </compound>
+  <compound refid="_curve_8h" kind="file"><name>Curve.h</name>
+    <member refid="_curve_8h_1a5e84628ccf5bc23ccfac181b077616ae" kind="define"><name>CURVE</name></member>
+  </compound>
+  <compound refid="_curve_vector_8h" kind="file"><name>CurveVector.h</name>
+    <member refid="_curve_vector_8h_1a4f234426a7c0a5fe82e44dc4c107c123" kind="define"><name>ELLIPSE</name></member>
+  </compound>
+  <compound refid="_ellipse_8h" kind="file"><name>Ellipse.h</name>
+    <member refid="_ellipse_8h_1a4f234426a7c0a5fe82e44dc4c107c123" kind="define"><name>ELLIPSE</name></member>
+  </compound>
+  <compound refid="_line_8h" kind="file"><name>Line.h</name>
+    <member refid="_line_8h_1af94cfb03461685fead1fe045d5c96f01" kind="define"><name>LINE</name></member>
+  </compound>
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1aeb9c2b853c6641432cdd6a578d07a6ca" kind="typedef"><name>shape</name></member>
+    <member refid="main_8cpp_1a90e1e7a7db1a80bca8299c990aa2e56b" kind="typedef"><name>line</name></member>
+    <member refid="main_8cpp_1ac0e29e7ace07aba75b874eac32e4c3f4" kind="typedef"><name>ellipse</name></member>
+    <member refid="main_8cpp_1ad2ac61982e65db6a64fdc80bc94fe295" kind="typedef"><name>point</name></member>
+    <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
+  </compound>
+  <compound refid="_point_8h" kind="file"><name>Point.h</name>
+    <member refid="_point_8h_1a43011aabc923f9b33f1f51dc03b23539" kind="define"><name>POINT</name></member>
+  </compound>
+  <compound refid="group___curves" kind="group"><name>Curves</name>
+    <member refid="group___curves_1ga4be7ea4cdf67b4012dfc3eeb7a83505b" kind="variable"><name>point</name></member>
+    <member refid="group___curves_1ga48f5ad3fb47ee313d4e98e442690af39" kind="function"><name>Point</name></member>
+    <member refid="group___curves_1ga936d7aaac56fc6e3656a6e491db9c95a" kind="function"><name>Point</name></member>
+    <member refid="group___curves_1ga402547dccd791ff753261fcb0c71c7fb" kind="function"><name>setPoint</name></member>
+    <member refid="group___curves_1ga4ad4c5096f93dcde96861fb6fe02589d" kind="function"><name>printPoint</name></member>
+    <member refid="group___curves_1ga62a20a6cd6bd25086d2290dadc453061" kind="function"><name>operator+</name></member>
+    <member refid="group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e" kind="function"><name>operator*</name></member>
+    <member refid="group___curves_1ga6770a6bfd2d0cbabccab64146cf7a123" kind="function"><name>operator*</name></member>
+    <member refid="group___curves_1ga3ca44f193f3c4b97784a9079aae8b28a" kind="function"><name>operator=</name></member>
+    <member refid="group___curves_1gaaaf81fd51af159386715a87c96fa0726" kind="function"><name>operator&lt;&lt;</name></member>
+    <member refid="group___curves_1gaec5bfb35da7490af4de778c750079814" kind="friend"><name>operator&lt;&lt;</name></member>
+  </compound>
+  <compound refid="dir_d44c64559bbebec7f509842c48db8b23" kind="dir"><name>include</name>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>src</name>
+  </compound>
+</doxygenindex>

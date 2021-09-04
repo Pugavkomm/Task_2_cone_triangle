@@ -1,0 +1,117 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_group___curves" xml:lang="en-US">
+<title>Curves</title>
+<indexterm><primary>Curves</primary></indexterm>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_curves_1_1_point">Curves::Point&lt; T &gt;</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39"/><link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Curves::Point&lt; T &gt;::Point</link> ()</para>
+
+<para>Default constructor that defines a point at the origin. </para>
+</listitem>
+            <listitem><para><link linkend="_group___curves_1ga936d7aaac56fc6e3656a6e491db9c95a">Curves::Point&lt; T &gt;::Point</link> (T x1, T x2)</para>
+
+<para>The constructor defines point. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___curves_1ga402547dccd791ff753261fcb0c71c7fb">Curves::Point&lt; T &gt;::setPoint</link> (T x1, T x2)</para>
+
+<para>The method sets the coordinates of the point. </para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___curves_1ga4ad4c5096f93dcde96861fb6fe02589d"/>void <emphasis role="strong">Curves::Point&lt; T &gt;::printPoint</emphasis> () const</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___curves_1ga62a20a6cd6bd25086d2290dadc453061"/><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">Curves::Point&lt; T &gt;::operator+</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e"/><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">Curves::Point&lt; T &gt;::operator*</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___curves_1ga6770a6bfd2d0cbabccab64146cf7a123"/><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">Curves::Point&lt; T &gt;::operator*</emphasis> (const double right)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___curves_1ga3ca44f193f3c4b97784a9079aae8b28a"/><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp; <emphasis role="strong">Curves::Point&lt; T &gt;::operator=</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_group___curves_1gaaaf81fd51af159386715a87c96fa0726"/>template&lt;typename T &gt; </para><para>std::ostream &amp; <emphasis role="strong">Curves::operator&lt;&lt;</emphasis> (std::ostream &amp;out, const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;p)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_group___curves_1gaec5bfb35da7490af4de778c750079814"/>template&lt;typename U &gt; </para><para>std::ostream &amp; <emphasis role="strong">Curves::Point&lt; T &gt;::operator&lt;&lt;</emphasis> (std::ostream &amp;out, const <link linkend="_class_curves_1_1_point">Point</link>&lt; U &gt; &amp;p)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+</section>
+<section>
+<title>Function Documentation</title>
+<anchor xml:id="_group___curves_1ga936d7aaac56fc6e3656a6e491db9c95a"/>    <section>
+    <title>Point()</title>
+<indexterm><primary>Point</primary><secondary>Curves</secondary></indexterm>
+<indexterm><primary>Curves</primary><secondary>Point</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_point">Curves::Point</link>&lt; T &gt;::<link linkend="_class_curves_1_1_point">Point</link> (T x1, T x2)</computeroutput></para><para>
+
+<para>The constructor defines point. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>coordinate</entry>
+                                <entry>
+<para>- point (x1, x2, x3, ..., DIM) </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+    </section><anchor xml:id="_group___curves_1ga402547dccd791ff753261fcb0c71c7fb"/>    <section>
+    <title>setPoint()</title>
+<indexterm><primary>setPoint</primary><secondary>Curves</secondary></indexterm>
+<indexterm><primary>Curves</primary><secondary>setPoint</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_curves_1_1_point">Curves::Point</link>&lt; T &gt;::setPoint (T x1, T x2)</computeroutput></para><para>
+
+<para>The method sets the coordinates of the point. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters                    </title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+                                <entry>x, y, z</entry>
+                                <entry>
+<para>are coordinates of input. </para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+</section>
+</section>
+</section>

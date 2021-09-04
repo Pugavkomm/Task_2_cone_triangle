@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="namespace_curves" kind="namespace" language="C++">
+    <compoundname>Curves</compoundname>
+    <innerclass refid="class_curves_1_1_curve" prot="public">Curves::Curve</innerclass>
+    <innerclass refid="class_curves_1_1_curve_vector" prot="public">Curves::CurveVector</innerclass>
+    <innerclass refid="class_curves_1_1_ellipse" prot="public">Curves::Ellipse</innerclass>
+    <innerclass refid="class_curves_1_1_line" prot="public">Curves::Line</innerclass>
+    <innerclass refid="class_curves_1_1_point" prot="public">Curves::Point</innerclass>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___curves_1gaaaf81fd51af159386715a87c96fa0726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Curves::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Point&lt; T &gt; &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const <ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="104" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="104" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>Generic <ref refid="namespace_curves" kindref="compound">Curves</ref> interfaces and implementations. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Curve.h" line="17" column="1"/>
+  </compounddef>
+</doxygen>

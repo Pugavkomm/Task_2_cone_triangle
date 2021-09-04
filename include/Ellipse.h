@@ -4,6 +4,7 @@
 #define ELLIPSE
 #include "Line.h"
 #include <cmath>
+#include <string>
 
 namespace Curves{
     template <typename T>
@@ -16,7 +17,7 @@ namespace Curves{
         }
         virtual Point<T> derivative(double parametr);
         virtual Point<T> point_per_parameter(double parameter);
-        virtual string type();
+        virtual std::string type();
     };
 }
 #endif
@@ -34,7 +35,7 @@ namespace Curves{
     }
 
     template <typename T>
-    string Ellipse<T>::type(){
+    std::string Ellipse<T>::type(){
         return "Ellipse"; 
     }
 }

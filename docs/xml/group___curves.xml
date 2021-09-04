@@ -1,0 +1,246 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="group___curves" kind="group">
+    <compoundname>Curves</compoundname>
+    <title>Curves</title>
+    <innerclass refid="class_curves_1_1_point" prot="public">Curves::Point</innerclass>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="group___curves_1ga4be7ea4cdf67b4012dfc3eeb7a83505b" prot="private" static="no" mutable="no">
+        <type>std::vector&lt; T &gt;</type>
+        <definition>std::vector&lt;T&gt; Curves::Point&lt; T &gt;::point</definition>
+        <argsstring></argsstring>
+        <name>point</name>
+        <initializer>= {0, 0}</initializer>
+        <briefdescription>
+<para>point = (x1, x2, ..., DIM). DIM - is space dimension </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="28" column="21" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="28" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="func">
+      <memberdef kind="function" id="group___curves_1ga48f5ad3fb47ee313d4e98e442690af39" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Curves::Point&lt; T &gt;::Point</definition>
+        <argsstring>()</argsstring>
+        <name>Point</name>
+        <briefdescription>
+<para>Default constructor that defines a point at the origin. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="34" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="60" bodyend="60"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga936d7aaac56fc6e3656a6e491db9c95a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Curves::Point&lt; T &gt;::Point</definition>
+        <argsstring>(T x1, T x2)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>T</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>x2</declname>
+        </param>
+        <briefdescription>
+<para>The constructor defines point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>coordinate</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>- point (x1, x2, x3, ..., DIM) </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="40" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="63" bodyend="67"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga402547dccd791ff753261fcb0c71c7fb" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Curves::Point&lt; T &gt;::setPoint</definition>
+        <argsstring>(T x1, T x2)</argsstring>
+        <name>setPoint</name>
+        <param>
+          <type>T</type>
+          <declname>x1</declname>
+        </param>
+        <param>
+          <type>T</type>
+          <declname>x2</declname>
+        </param>
+        <briefdescription>
+<para>The method sets the coordinates of the point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>x</parametername>
+<parametername>y</parametername>
+<parametername>z</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>are coordinates of input. </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="46" column="14" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="70" bodyend="73"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga4ad4c5096f93dcde96861fb6fe02589d" prot="public" static="no" const="yes" explicit="no" inline="no" virt="non-virtual">
+        <type>void</type>
+        <definition>void Curves::Point&lt; T &gt;::printPoint</definition>
+        <argsstring>() const</argsstring>
+        <name>printPoint</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="47" column="14" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="76" bodyend="78"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga62a20a6cd6bd25086d2290dadc453061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Point&lt; T &gt;</type>
+        <definition>Point&lt; T &gt; Curves::Point&lt; T &gt;::operator+</definition>
+        <argsstring>(const Point&lt; T &gt; &amp;right)</argsstring>
+        <name>operator+</name>
+        <param>
+          <type>const Point&lt; T &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="48" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="81" bodyend="83"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Point&lt; T &gt;</type>
+        <definition>Point&lt; T &gt; Curves::Point&lt; T &gt;::operator*</definition>
+        <argsstring>(const Point&lt; T &gt; &amp;right)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const Point&lt; T &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="49" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="86" bodyend="88"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga6770a6bfd2d0cbabccab64146cf7a123" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Point&lt; T &gt;</type>
+        <definition>Point&lt; T &gt; Curves::Point&lt; T &gt;::operator*</definition>
+        <argsstring>(const double right)</argsstring>
+        <name>operator*</name>
+        <param>
+          <type>const double</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="50" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="91" bodyend="93"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga3ca44f193f3c4b97784a9079aae8b28a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Point&lt; T &gt; &amp;</type>
+        <definition>Point&lt; T &gt; &amp; Curves::Point&lt; T &gt;::operator=</definition>
+        <argsstring>(const Point&lt; T &gt; &amp;right)</argsstring>
+        <name>operator=</name>
+        <param>
+          <type>const Point&lt; T &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="51" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="96" bodyend="101"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1gaaaf81fd51af159386715a87c96fa0726" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename T</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; Curves::operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Point&lt; T &gt; &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const Point&lt; T &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="104" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="104" bodyend="115"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="">
+      <memberdef kind="friend" id="group___curves_1gaec5bfb35da7490af4de778c750079814" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <templateparamlist>
+          <param>
+            <type>typename U</type>
+          </param>
+        </templateparamlist>
+        <type>std::ostream &amp;</type>
+        <definition>std::ostream&amp; operator&lt;&lt;</definition>
+        <argsstring>(std::ostream &amp;out, const Point&lt; U &gt; &amp;p)</argsstring>
+        <name>operator&lt;&lt;</name>
+        <param>
+          <type>std::ostream &amp;</type>
+          <declname>out</declname>
+        </param>
+        <param>
+          <type>const Point&lt; U &gt; &amp;</type>
+          <declname>p</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="53" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+  </compounddef>
+</doxygen>

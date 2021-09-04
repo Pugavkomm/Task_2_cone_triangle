@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_curves_1_1_ellipse" xml:lang="en-US">
+<title>Curves::Ellipse&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Curves::Ellipse&lt; T &gt;</primary></indexterm>
+Inheritance diagram for Curves::Ellipse&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_curves_1_1_ellipse__inherit__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+Collaboration diagram for Curves::Ellipse&lt; T &gt;:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_curves_1_1_ellipse__coll__graph.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_class_curves_1_1_ellipse_1a6dc9776af355574ddfe54ac601f2f47a"/><emphasis role="strong">Ellipse</emphasis> (<link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; o, <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; d)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b"/>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">derivative</emphasis> (double parametr)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2"/>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">point_per_parameter</emphasis> (double parameter)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e"/>virtual std::string <emphasis role="strong">type</emphasis> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+Ellipse.h</section>

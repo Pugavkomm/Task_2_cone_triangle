@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_curves_1_1_point" xml:lang="en-US">
+<title>Curves::Point&lt; T &gt; Class Template Reference</title>
+<indexterm><primary>Curves::Point&lt; T &gt;</primary></indexterm>
+<simplesect>
+    <title>Public Member Functions    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Point</link> ()</para>
+
+<para>Default constructor that defines a point at the origin. </para>
+</listitem>
+            <listitem><para><link linkend="_group___curves_1ga936d7aaac56fc6e3656a6e491db9c95a">Point</link> (T x1, T x2)</para>
+
+<para>The constructor defines point. </para>
+</listitem>
+            <listitem><para>void <link linkend="_group___curves_1ga402547dccd791ff753261fcb0c71c7fb">setPoint</link> (T x1, T x2)</para>
+
+<para>The method sets the coordinates of the point. </para>
+</listitem>
+            <listitem><para>void <emphasis role="strong">printPoint</emphasis> () const</para>
+</listitem>
+            <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">operator+</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
+</listitem>
+            <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">operator*</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
+</listitem>
+            <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">operator*</emphasis> (const double right)</para>
+</listitem>
+            <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp; <emphasis role="strong">operator=</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Friends    </title>
+        <itemizedlist>
+            <listitem><para>template&lt;typename U &gt; </para><para>std::ostream &amp; <emphasis role="strong">operator&lt;&lt;</emphasis> (std::ostream &amp;out, const <link linkend="_class_curves_1_1_point">Point</link>&lt; U &gt; &amp;p)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<para>
+The documentation for this class was generated from the following file:</para>
+<link linkend="__point_8h">Point.h</link></section>

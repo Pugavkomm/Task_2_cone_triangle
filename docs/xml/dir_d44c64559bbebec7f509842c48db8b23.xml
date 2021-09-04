@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+  <compounddef id="dir_d44c64559bbebec7f509842c48db8b23" kind="dir">
+    <compoundname>include</compoundname>
+    <innerfile refid="consts_8h">consts.h</innerfile>
+    <innerfile refid="_curve_8h">Curve.h</innerfile>
+    <innerfile refid="_curve_vector_8h">CurveVector.h</innerfile>
+    <innerfile refid="_ellipse_8h">Ellipse.h</innerfile>
+    <innerfile refid="_line_8h">Line.h</innerfile>
+    <innerfile refid="_point_8h">Point.h</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/"/>
+  </compounddef>
+</doxygen>
