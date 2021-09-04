@@ -1,0 +1,7 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/mech/projects/cadexcharnger/Task_1_curve'
+ 
+g++ -std=c++17 -Wall -Wextra -O2 -Iinclude -o output/main src/main.o  -Llib
+echo Executing 'all' complete!
+make: Leaving directory '/home/mech/projects/cadexcharnger/Task_1_curve'
+ 

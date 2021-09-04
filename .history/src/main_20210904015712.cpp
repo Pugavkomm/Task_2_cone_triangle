@@ -1,0 +1,17 @@
+#include <iostream>
+
+#include "Shape.h"
+#include "Line.h"
+#include "Ellipse.h"
+#include <vector>
+using shapes = Curves::Shape<double>;
+using lines = Curves::Line<double>;
+using ellipses = Curves::Ellipse<double>;
+
+int main(int argc, char *argv[])
+{
+	std::vector<shapes*> curves_vector;
+	curves_vector.push_back(&lines())
+	
+	return 0; 
+}
