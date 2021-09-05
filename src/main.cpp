@@ -1,11 +1,22 @@
+/**
+ * @file main.cpp
+ * @author Mechislav Pugavko 
+ * @brief 
+ * @version 1.0
+ * @date 2021-09-05
+ * 
+ * @copyright Copyright (c) 2021
+ * 
+ */
+
 #include <iostream>
 #include "consts.h"
-#include <vector>
 #include "Point.h"
 #include "Curve.h"
 #include "Line.h"
 #include "Ellipse.h"
 #include <array>
+#include <vector>
 #include <memory>
 using shape = Curves::Curve<double>;
 using line = Curves::Line<double>;

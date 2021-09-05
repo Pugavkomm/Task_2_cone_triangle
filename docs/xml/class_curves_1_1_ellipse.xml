@@ -16,33 +16,53 @@
         <argsstring>()</argsstring>
         <name>Ellipse</name>
         <briefdescription>
+<para>Default constructor that defines a point at the origin = (0, 0) and direction = (0, 0). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="18" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="18" bodyend="19"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="27" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="27" bodyend="27"/>
       </memberdef>
-      <memberdef kind="function" id="class_curves_1_1_ellipse_1a6dc9776af355574ddfe54ac601f2f47a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+      <memberdef kind="function" id="class_curves_1_1_ellipse_1a42aa3b81c4338161e0a4d337632a282e" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
         <definition>Curves::Ellipse&lt; T &gt;::Ellipse</definition>
-        <argsstring>(Point&lt; T &gt; o, Point&lt; T &gt; d)</argsstring>
+        <argsstring>(Point&lt; T &gt; origin, Point&lt; T &gt; direction)</argsstring>
         <name>Ellipse</name>
         <param>
           <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
-          <declname>o</declname>
+          <declname>origin</declname>
         </param>
         <param>
           <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
-          <declname>d</declname>
+          <declname>direction</declname>
         </param>
         <briefdescription>
+<para>Сonstructor that defines a point at the origin and direction. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is origin </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is direction </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="20" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="20" bodyend="22"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="34" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="34" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -52,15 +72,15 @@
         <reimplements refid="class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43">derivative</reimplements>
         <param>
           <type>double</type>
-          <declname>parameter</declname>
+          <declname>parametr</declname>
         </param>
         <briefdescription>
-<para>Placeholder and Coincides with <ref refid="class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb" kindref="member">get_direction()</ref> </para>
+<para>Method that return derivative per parameter. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>parameter</parametername>
+<parametername>parametr</parametername>
 </parameternamelist>
 <parameterdescription>
 <para></para>
@@ -73,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="23" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="38" bodyend="42"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="41" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="67" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -86,7 +106,7 @@
           <declname>parameter</declname>
         </param>
         <briefdescription>
-<para>Placeholder and Coincides with <ref refid="class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31" kindref="member">get_origin()</ref> </para>
+<para>Method that return point per parameter. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -104,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="24" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="31" bodyend="35"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="48" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="60" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
@@ -113,7 +133,7 @@
         <name>type</name>
         <reimplements refid="class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74">type</reimplements>
         <briefdescription>
-<para>Return type curve. </para>
+<para>Method that return type. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="return"><para>std::string </para>
@@ -122,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="25" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="45" bodyend="47"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="54" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="74" bodyend="76"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -166,13 +186,13 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="16" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="16" bodyend="26"/>
+    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="22" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="22" bodyend="55"/>
     <listofallmembers>
       <member refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Curve</name></member>
       <member refid="class_curves_1_1_curve_1a7290d7306cbf2d250d99cac5c7a39646" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Curve</name></member>
       <member refid="class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b" prot="public" virt="virtual"><scope>Curves::Ellipse</scope><name>derivative</name></member>
       <member refid="class_curves_1_1_ellipse_1a4e698aedea1289212a0a48550ddf49e3" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Ellipse</name></member>
-      <member refid="class_curves_1_1_ellipse_1a6dc9776af355574ddfe54ac601f2f47a" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Ellipse</name></member>
+      <member refid="class_curves_1_1_ellipse_1a42aa3b81c4338161e0a4d337632a282e" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Ellipse</name></member>
       <member refid="class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>get_direction</name></member>
       <member refid="class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>get_origin</name></member>
       <member refid="class_curves_1_1_line_1a9c7b60f218803c1925b79c874270e620" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Line</name></member>

@@ -1,0 +1,79 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_main_8cpp" xml:lang="en-US">
+<title>main.cpp File Reference</title>
+<indexterm><primary>main.cpp</primary></indexterm>
+<programlisting linenumbering="unnumbered">#include &lt;iostream&gt;
+#include &quot;consts.h&quot;
+#include &quot;Point.h&quot;
+#include &quot;Curve.h&quot;
+#include &quot;Line.h&quot;
+#include &quot;Ellipse.h&quot;
+#include &lt;array&gt;
+#include &lt;vector&gt;
+#include &lt;memory&gt;
+</programlisting>Include dependency graph for main.cpp:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="main_8cpp__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Typedefs    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_main_8cpp_1aeb9c2b853c6641432cdd6a578d07a6ca"/>using <emphasis role="strong">shape</emphasis> = <link linkend="_class_curves_1_1_curve">Curves::Curve</link>&lt; double &gt;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8cpp_1a90e1e7a7db1a80bca8299c990aa2e56b"/>using <emphasis role="strong">line</emphasis> = <link linkend="_class_curves_1_1_line">Curves::Line</link>&lt; double &gt;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8cpp_1ac0e29e7ace07aba75b874eac32e4c3f4"/>using <emphasis role="strong">ellipse</emphasis> = <link linkend="_class_curves_1_1_ellipse">Curves::Ellipse</link>&lt; double &gt;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8cpp_1ad2ac61982e65db6a64fdc80bc94fe295"/>using <emphasis role="strong">point</emphasis> = <link linkend="_class_curves_1_1_point">Curves::Point</link>&lt; double &gt;</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8cpp_1ac3f864bfa0c0ca033085d12b7a06efbc"/>using <emphasis role="strong">coordinate</emphasis> = std::array&lt; double, DIM &gt;</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Functions    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_main_8cpp_1a810775b13f398db2f01d82d26c14d556"/>double <emphasis role="strong">generate_random_value</emphasis> (double start=-10, double stop=10)</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97"/>int <emphasis role="strong">main</emphasis> (int argc, char *argv[])</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Variables    </title>
+        <itemizedlist>
+            <listitem><para><anchor xml:id="_main_8cpp_1a23e092a6a33380782b4dfe7a4a8793a5"/>const int <emphasis role="strong">number_of_curves</emphasis> = 20</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8cpp_1a6b3d5c53978e0462b2a839fb33c8cb98"/>const double <emphasis role="strong">parameter</emphasis> = M_PI / 4.0</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8cpp_1aea0d639eca72b0b16ec6f01c433c258d"/>const double <emphasis role="strong">PI_2</emphasis> = 2 * M_PI</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para><formalpara><title>Author</title>
+
+<para>Mechislav Pugavko </para>
+</formalpara>
+<formalpara><title>Version</title>
+
+<para>1.0 </para>
+</formalpara>
+<formalpara><title>Date</title>
+
+<para>2021-09-05</para>
+</formalpara>
+<formalpara><title>Copyright</title>
+
+<para>Copyright (c) 2021 </para>
+</formalpara>
+</para>
+</section>
+</section>

@@ -1,5 +1,6 @@
 <map id="Curve.h" name="Curve.h">
-<area shape="rect" id="node1" title=" " alt="" coords="8,5,80,32"/>
-<area shape="rect" id="node2" href="$_line_8h_source.html" title=" " alt="" coords="13,80,75,107"/>
-<area shape="rect" id="node3" href="$_ellipse_8h_source.html" title=" " alt="" coords="5,155,83,181"/>
+<area shape="rect" id="node1" title="Curve class interface and implementation. Curve class is base class." alt="" coords="100,5,172,32"/>
+<area shape="rect" id="node2" href="$_line_8h.html" title="Line class interface and implementation." alt="" coords="72,80,133,107"/>
+<area shape="rect" id="node4" href="$main_8cpp.html" title=" " alt="" coords="79,229,161,256"/>
+<area shape="rect" id="node3" href="$_ellipse_8h.html" title="Ellipse class interface and implementation." alt="" coords="5,155,83,181"/>
 </map>

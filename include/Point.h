@@ -1,6 +1,6 @@
 /**
  * @file point.h
- * @brief Point class interface
+ * @brief Point class interface and implementation
  */
 #pragma once
 #ifndef POINT
@@ -48,7 +48,6 @@ namespace Curves
              * @param std::array is coordinates of input.
              */
         void setPoint(const std::array<T, DIM> &point);
-        void printPoint() const;
         Point<T> operator+(const Point<T> &right);
         Point<T> operator*( const Point<T> &right);
         Point<T> operator*(const double right);

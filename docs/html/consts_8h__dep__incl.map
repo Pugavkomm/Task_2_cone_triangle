@@ -1,7 +1,8 @@
 <map id="consts.h" name="consts.h">
-<area shape="rect" id="node1" title="Constants." alt="" coords="39,5,115,32"/>
-<area shape="rect" id="node2" href="$_point_8h.html" title="Point class interface." alt="" coords="44,80,111,107"/>
-<area shape="rect" id="node3" href="$_curve_8h.html" title=" " alt="" coords="5,155,77,181"/>
-<area shape="rect" id="node4" href="$_line_8h_source.html" title=" " alt="" coords="47,229,108,256"/>
-<area shape="rect" id="node5" href="$_ellipse_8h_source.html" title=" " alt="" coords="39,304,116,331"/>
+<area shape="rect" id="node1" title="Constants." alt="" coords="171,5,247,32"/>
+<area shape="rect" id="node2" href="$_point_8h.html" title="Point class interface and implementation." alt="" coords="141,80,208,107"/>
+<area shape="rect" id="node6" href="$main_8cpp.html" title=" " alt="" coords="129,379,212,405"/>
+<area shape="rect" id="node3" href="$_curve_8h.html" title="Curve class interface and implementation. Curve class is base class." alt="" coords="112,155,184,181"/>
+<area shape="rect" id="node4" href="$_line_8h.html" title="Line class interface and implementation." alt="" coords="57,229,119,256"/>
+<area shape="rect" id="node5" href="$_ellipse_8h.html" title="Ellipse class interface and implementation." alt="" coords="5,304,83,331"/>
 </map>

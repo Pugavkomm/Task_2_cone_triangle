@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title=" ">
+<g id="a_node1"><a xlink:title="Curve class interface and implementation. Curve class is base class.">
 <polygon fill="#bfbfbf" stroke="black" points="270,-112.5 270,-131.5 324,-131.5 324,-112.5 270,-112.5"/>
 <text text-anchor="middle" x="297" y="-119.5" font-family="Helvetica,sans-Serif" font-size="10.00">Curve.h</text>
 </a>
@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="$_point_8h.html" xlink:title="Point class interface.">
+<g id="a_node2"><a xlink:href="$_point_8h.html" xlink:title="Point class interface and implementation.">
 <polygon fill="white" stroke="black" points="197,-56.5 197,-75.5 247,-75.5 247,-56.5 197,-56.5"/>
 <text text-anchor="middle" x="222" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point.h</text>
 </a>

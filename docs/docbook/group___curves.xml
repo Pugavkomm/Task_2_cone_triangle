@@ -35,8 +35,6 @@
 
 <para>The method sets the coordinates of the point. </para>
 </listitem>
-            <listitem><para><anchor xml:id="_group___curves_1ga4ad4c5096f93dcde96861fb6fe02589d"/>void <emphasis role="strong">Curves::Point&lt; T &gt;::printPoint</emphasis> () const</para>
-</listitem>
             <listitem><para><anchor xml:id="_group___curves_1ga62a20a6cd6bd25086d2290dadc453061"/><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">Curves::Point&lt; T &gt;::operator+</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
 </listitem>
             <listitem><para><anchor xml:id="_group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e"/><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">Curves::Point&lt; T &gt;::operator*</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>

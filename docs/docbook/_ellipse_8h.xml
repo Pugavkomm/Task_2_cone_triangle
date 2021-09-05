@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__ellipse_8h" xml:lang="en-US">
+<title>Ellipse.h File Reference</title>
+<indexterm><primary>Ellipse.h</primary></indexterm>
+<para>
+
+<para>Ellipse class interface and implementation. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;Line.h&quot;
+#include &lt;cmath&gt;
+#include &lt;string&gt;
+</programlisting>Include dependency graph for Ellipse.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_ellipse_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_ellipse_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_curves_1_1_ellipse">Curves::Ellipse&lt; T &gt;</link></para>
+
+<para><link linkend="_class_curves_1_1_curve">Curve</link>:<link linkend="_class_curves_1_1_ellipse">Ellipse</link>. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_curves">Curves</link></para>
+
+<para>Generic <link linkend="_namespace_curves">Curves</link> interfaces and implementations. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Ellipse class interface and implementation. </para>
+</section>
+</section>

@@ -15,7 +15,7 @@
   </compound>
   <compound refid="class_curves_1_1_ellipse" kind="class"><name>Curves::Ellipse</name>
     <member refid="class_curves_1_1_ellipse_1a4e698aedea1289212a0a48550ddf49e3" kind="function"><name>Ellipse</name></member>
-    <member refid="class_curves_1_1_ellipse_1a6dc9776af355574ddfe54ac601f2f47a" kind="function"><name>Ellipse</name></member>
+    <member refid="class_curves_1_1_ellipse_1a42aa3b81c4338161e0a4d337632a282e" kind="function"><name>Ellipse</name></member>
     <member refid="class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b" kind="function"><name>derivative</name></member>
     <member refid="class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2" kind="function"><name>point_per_parameter</name></member>
     <member refid="class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e" kind="function"><name>type</name></member>
@@ -32,7 +32,6 @@
     <member refid="group___curves_1ga48f5ad3fb47ee313d4e98e442690af39" kind="function"><name>Point</name></member>
     <member refid="group___curves_1ga9b7a427b639dcd43e55ec8c0c719d781" kind="function"><name>Point</name></member>
     <member refid="group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4" kind="function"><name>setPoint</name></member>
-    <member refid="group___curves_1ga4ad4c5096f93dcde96861fb6fe02589d" kind="function"><name>printPoint</name></member>
     <member refid="group___curves_1ga62a20a6cd6bd25086d2290dadc453061" kind="function"><name>operator+</name></member>
     <member refid="group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e" kind="function"><name>operator*</name></member>
     <member refid="group___curves_1ga6770a6bfd2d0cbabccab64146cf7a123" kind="function"><name>operator*</name></member>
@@ -43,7 +42,7 @@
     <member refid="group___curves_1gaf733009b4478009aba1743d320d31538" kind="function"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="consts_8h" kind="file"><name>consts.h</name>
-    <member refid="consts_8h_1a4a95bc1f328695fafcb74e533730354f" kind="variable"><name>DIM</name></member>
+    <member refid="consts_8h_1a589b8b9bfdf714f736059845d568b597" kind="variable"><name>DIM</name></member>
   </compound>
   <compound refid="_curve_8h" kind="file"><name>Curve.h</name>
     <member refid="_curve_8h_1a5e84628ccf5bc23ccfac181b077616ae" kind="define"><name>CURVE</name></member>
@@ -74,7 +73,6 @@
     <member refid="group___curves_1ga48f5ad3fb47ee313d4e98e442690af39" kind="function"><name>Point</name></member>
     <member refid="group___curves_1ga9b7a427b639dcd43e55ec8c0c719d781" kind="function"><name>Point</name></member>
     <member refid="group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4" kind="function"><name>setPoint</name></member>
-    <member refid="group___curves_1ga4ad4c5096f93dcde96861fb6fe02589d" kind="function"><name>printPoint</name></member>
     <member refid="group___curves_1ga62a20a6cd6bd25086d2290dadc453061" kind="function"><name>operator+</name></member>
     <member refid="group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e" kind="function"><name>operator*</name></member>
     <member refid="group___curves_1ga6770a6bfd2d0cbabccab64146cf7a123" kind="function"><name>operator*</name></member>

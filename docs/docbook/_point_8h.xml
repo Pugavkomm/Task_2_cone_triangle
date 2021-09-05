@@ -4,7 +4,7 @@
 <indexterm><primary>Point.h</primary></indexterm>
 <para>
 
-<para>Point class interface. </para>
+<para>Point class interface and implementation. </para>
  
 </para>
 <programlisting linenumbering="unnumbered">#include &lt;iostream&gt;
@@ -58,6 +58,6 @@ This graph shows which files directly or indirectly include this file:<para>
 <section>
 <title>Detailed Description</title>
 
-<para>Point class interface. </para>
+<para>Point class interface and implementation. </para>
 </section>
 </section>

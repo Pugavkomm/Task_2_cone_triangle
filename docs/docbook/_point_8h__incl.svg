@@ -12,7 +12,7 @@
 <!-- Node1 -->
 <g id="node1" class="node">
 <title>Node1</title>
-<g id="a_node1"><a xlink:title="Point class interface.">
+<g id="a_node1"><a xlink:title="Point class interface and implementation.">
 <polygon fill="#bfbfbf" stroke="black" points="161,-56.5 161,-75.5 211,-75.5 211,-56.5 161,-56.5"/>
 <text text-anchor="middle" x="186" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Point.h</text>
 </a>

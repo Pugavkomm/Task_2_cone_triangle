@@ -1,11 +1,7 @@
 /**
  * @file Curve.h
- * @author your name (you@domain.com)
- * @brief 
- * @version 0.1
- * @date 2021-09-03
+ * @brief Curve class interface and implementation. Curve class is base class. 
  * 
- * @copyright Copyright (c) 2021
  * 
  */
 #pragma once

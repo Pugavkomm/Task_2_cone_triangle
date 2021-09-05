@@ -3,79 +3,79 @@
 <title>Curve.h</title>
 <indexterm><primary>Curve.h</primary></indexterm>
 Go to the documentation of this file.<programlisting linenumbering="unnumbered">1 
-11 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
-12 <emphasis role="preprocessor">#ifndef&#32;CURVE</emphasis>
-13 <emphasis role="preprocessor">#define&#32;CURVE</emphasis>
-14 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__point_8h">Point.h</link>&quot;</emphasis>
-15 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
-16 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
-17 
-18 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>&#32;{
-23 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-24 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_curves_1_1_curve">Curve</link>{
-29 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin;&#32;
-34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction;&#32;
-35 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
-39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd">Curve</link>();
-43 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd">Curve</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin,&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction);
-49 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece">set_origin</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin);
-55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30">set_direction</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction);
-61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">get_origin</link>();
-67 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb">get_direction</link>();
-73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="_class_curves_1_1_curve_1a77576ec4580cb65f8c321f9cd781d170">type</link>();
-80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a77ccdde01f02dcf2f24e1cf4d8f02efb">derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter);&#32;<emphasis role="comment">//placholder&#32;</emphasis>
-87 <emphasis role="comment"></emphasis>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a2f26fde121d9942082233c25a94047ef">point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter);&#32;<emphasis role="comment">//placholder</emphasis>
-88 &#32;&#32;&#32;&#32;};
-89 }
-90 <emphasis role="preprocessor">#endif</emphasis>
-91 
-92 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>{
-93 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-94 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd">Curve&lt;T&gt;::Curve</link>(){
-95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;origin&#32;=&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>();
-96 &#32;&#32;&#32;&#32;}
-97 
-98 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-99 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd">Curve&lt;T&gt;::Curve</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin,&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction){
-100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;set_origin(origin);
-101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;set_direction(origin);
-102 &#32;&#32;&#32;&#32;}
-103 
-104 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-105 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece">Curve&lt;T&gt;::set_origin</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin){
-106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;origin&#32;=&#32;origin;&#32;
-107 &#32;&#32;&#32;&#32;}
-108 
-109 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-110 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30">Curve&lt;T&gt;::set_direction</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction){
-111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;direction&#32;=&#32;direction;&#32;
-112 &#32;&#32;&#32;&#32;}
-113 
-114 &#32;&#32;&#32;&#32;
-115 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-116 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">Curve&lt;T&gt;::get_origin</link>(){
-117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;origin;&#32;
-118 &#32;&#32;&#32;&#32;}
-119 
-120 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-121 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb">Curve&lt;T&gt;::get_direction</link>(){
-122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;&#32;direction;
-123 &#32;&#32;&#32;&#32;}
-124 
-125 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-126 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_curves_1_1_curve_1a77576ec4580cb65f8c321f9cd781d170">Curve&lt;T&gt;::type</link>(){
-127 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="stringliteral">&quot;Curve:Base&quot;</emphasis>;
-128 &#32;&#32;&#32;&#32;}
-129 
-130 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-131 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a77ccdde01f02dcf2f24e1cf4d8f02efb">Curve&lt;T&gt;::derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter){
-132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;direction;&#32;
-133 &#32;&#32;&#32;&#32;}
-134 &#32;&#32;&#32;&#32;
-135 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;&#32;
-136 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a2f26fde121d9942082233c25a94047ef">Curve&lt;T&gt;::point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter){
-137 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;origin;&#32;
-138 &#32;&#32;&#32;&#32;}
-139 }
-140 
+7 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+8 <emphasis role="preprocessor">#ifndef&#32;CURVE</emphasis>
+9 <emphasis role="preprocessor">#define&#32;CURVE</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="__point_8h">Point.h</link>&quot;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
+12 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+13 
+14 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>&#32;{
+19 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+20 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_curves_1_1_curve">Curve</link>{
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin;&#32;
+30 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction;&#32;
+31 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+35 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd">Curve</link>();
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd">Curve</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin,&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction);
+45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece">set_origin</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin);
+51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30">set_direction</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction);
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">get_origin</link>();
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb">get_direction</link>();
+69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="_class_curves_1_1_curve_1a77576ec4580cb65f8c321f9cd781d170">type</link>();
+76 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a77ccdde01f02dcf2f24e1cf4d8f02efb">derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter);&#32;<emphasis role="comment">//placholder&#32;</emphasis>
+83 <emphasis role="comment"></emphasis>&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a2f26fde121d9942082233c25a94047ef">point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter);&#32;<emphasis role="comment">//placholder</emphasis>
+84 &#32;&#32;&#32;&#32;};
+85 }
+86 <emphasis role="preprocessor">#endif</emphasis>
+87 
+88 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>{
+89 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+90 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd">Curve&lt;T&gt;::Curve</link>(){
+91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;origin&#32;=&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>();
+92 &#32;&#32;&#32;&#32;}
+93 
+94 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+95 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd">Curve&lt;T&gt;::Curve</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin,&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction){
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;set_origin(origin);
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;set_direction(origin);
+98 &#32;&#32;&#32;&#32;}
+99 
+100 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+101 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece">Curve&lt;T&gt;::set_origin</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin){
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;origin&#32;=&#32;origin;&#32;
+103 &#32;&#32;&#32;&#32;}
+104 
+105 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+106 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30">Curve&lt;T&gt;::set_direction</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction){
+107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;direction&#32;=&#32;direction;&#32;
+108 &#32;&#32;&#32;&#32;}
+109 
+110 &#32;&#32;&#32;&#32;
+111 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+112 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">Curve&lt;T&gt;::get_origin</link>(){
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;origin;&#32;
+114 &#32;&#32;&#32;&#32;}
+115 
+116 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+117 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb">Curve&lt;T&gt;::get_direction</link>(){
+118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;&#32;direction;
+119 &#32;&#32;&#32;&#32;}
+120 
+121 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+122 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_curves_1_1_curve_1a77576ec4580cb65f8c321f9cd781d170">Curve&lt;T&gt;::type</link>(){
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="stringliteral">&quot;Curve:Base&quot;</emphasis>;
+124 &#32;&#32;&#32;&#32;}
+125 
+126 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+127 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a77ccdde01f02dcf2f24e1cf4d8f02efb">Curve&lt;T&gt;::derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter){
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;direction;&#32;
+129 &#32;&#32;&#32;&#32;}
+130 &#32;&#32;&#32;&#32;
+131 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;&#32;
+132 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a2f26fde121d9942082233c25a94047ef">Curve&lt;T&gt;::point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter){
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;origin;&#32;
+134 &#32;&#32;&#32;&#32;}
+135 }
+136 
 </programlisting></section>

@@ -17,12 +17,13 @@
         <argsstring>()</argsstring>
         <name>Line</name>
         <briefdescription>
+<para>Default constructor that defines a point at the origin = (0, 0) and direction = (0, 0). </para>
         </briefdescription>
         <detaileddescription>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="17" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="29" bodyend="29"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="25" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_line_1a449872d1dfc7831033676cbf52d4f3b1" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -38,12 +39,31 @@
           <declname>direction</declname>
         </param>
         <briefdescription>
+<para>Сonstructor that defines a point at the origin and direction. </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>origin</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is origin </para>
+</parameterdescription>
+</parameteritem>
+<parameteritem>
+<parameternamelist>
+<parametername>direction</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is direction </para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="18" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="31" bodyend="35"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="31" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="61" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -57,12 +77,12 @@
           <declname>parameter</declname>
         </param>
         <briefdescription>
-<para>Placeholder and Coincides with <ref refid="class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb" kindref="member">get_direction()</ref> </para>
+<para>Method that return derivative per parameter. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
 <parameternamelist>
-<parametername>parameter</parametername>
+<parametername>parametr</parametername>
 </parameternamelist>
 <parameterdescription>
 <para></para>
@@ -75,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="19" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="39" bodyend="42"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="38" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="69" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -89,7 +109,7 @@
           <declname>parameter</declname>
         </param>
         <briefdescription>
-<para>Placeholder and Coincides with <ref refid="class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31" kindref="member">get_origin()</ref> </para>
+<para>Method that return point per parameter. </para>
         </briefdescription>
         <detaileddescription>
 <para><parameterlist kind="param"><parameteritem>
@@ -107,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="20" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="44" bodyend="46"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="45" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="74" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
@@ -117,7 +137,7 @@
         <reimplements refid="class_curves_1_1_curve_1a77576ec4580cb65f8c321f9cd781d170">type</reimplements>
         <reimplementedby refid="class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e">type</reimplementedby>
         <briefdescription>
-<para>Return type curve. </para>
+<para>Method that return type. </para>
         </briefdescription>
         <detaileddescription>
 <para><simplesect kind="return"><para>std::string </para>
@@ -126,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="21" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="49" bodyend="51"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="51" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="79" bodyend="81"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -164,7 +184,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="15" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="15" bodyend="22"/>
+    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="20" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="20" bodyend="52"/>
     <listofallmembers>
       <member refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" prot="public" virt="non-virtual"><scope>Curves::Line</scope><name>Curve</name></member>
       <member refid="class_curves_1_1_curve_1a7290d7306cbf2d250d99cac5c7a39646" prot="public" virt="non-virtual"><scope>Curves::Line</scope><name>Curve</name></member>

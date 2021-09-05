@@ -2,6 +2,11 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__curve_8h" xml:lang="en-US">
 <title>Curve.h File Reference</title>
 <indexterm><primary>Curve.h</primary></indexterm>
+<para>
+
+<para>Curve class interface and implementation. Curve class is base class. </para>
+ 
+</para>
 <programlisting linenumbering="unnumbered">#include &quot;Point.h&quot;
 #include &lt;cmath&gt;
 #include &lt;string&gt;
@@ -44,22 +49,6 @@ This graph shows which files directly or indirectly include this file:<para>
 <section>
 <title>Detailed Description</title>
 
-<para><formalpara><title>Author</title>
-
-<para>your name (<link xlink:href="mailto:you@domain.com">you@domain.com</link>) </para>
-</formalpara>
-<formalpara><title>Version</title>
-
-<para>0.1 </para>
-</formalpara>
-<formalpara><title>Date</title>
-
-<para>2021-09-03</para>
-</formalpara>
-<formalpara><title>Copyright</title>
-
-<para>Copyright (c) 2021 </para>
-</formalpara>
-</para>
+<para>Curve class interface and implementation. Curve class is base class. </para>
 </section>
 </section>

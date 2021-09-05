@@ -1,4 +1,10 @@
 
+/**
+ * @file Ellipse.h
+ * @brief Ellipse class interface and implementation
+ * 
+ */
+
 #pragma once
 #ifndef ELLIPSE
 #define ELLIPSE
@@ -15,13 +21,36 @@ namespace Curves{
     template <typename T>
     class Ellipse : public Line<T>{
     public:
-        Ellipse(): Line<T>(){
-        }
-        Ellipse(Point<T> o, Point<T> d): Line<T>(o, d){
-            
-        }
+        /**
+         * @brief Default constructor that defines a point at the origin = (0, 0) and direction = (0, 0).
+         */
+        Ellipse(): Line<T>(){}
+        /**
+         * @brief  Сonstructor that defines a point at the origin and direction.
+         * 
+         * @param origin is origin
+         * @param direction is direction
+         */
+        Ellipse(Point<T> origin, Point<T> direction): Line<T>(origin, direction){}
+        /**
+         * @brief Method that return derivative per parameter
+         * 
+         * @param parametr 
+         * @return Point<T> 
+         */
         virtual Point<T> derivative(double parametr);
+        /**
+         * @brief Method that return point per parameter
+         * 
+         * @param parameter 
+         * @return Point<T> 
+         */
         virtual Point<T> point_per_parameter(double parameter);
+        /**
+         * @brief Method that return type
+         * 
+         * @return std::string 
+         */
         virtual std::string type();
     };
 }

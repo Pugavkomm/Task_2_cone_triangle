@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['get_5fdirection_0',['get_direction',['../class_curves_1_1_curve.html#a331320f4512ad35745f13c5ac11f41cb',1,'Curves::Curve']]],
-  ['get_5forigin_1',['get_origin',['../class_curves_1_1_curve.html#ab4a377ce4d09b127250412f3949dfc31',1,'Curves::Curve']]]
+  ['ellipse_0',['Ellipse',['../class_curves_1_1_ellipse.html#a4e698aedea1289212a0a48550ddf49e3',1,'Curves::Ellipse::Ellipse()'],['../class_curves_1_1_ellipse.html#a42aa3b81c4338161e0a4d337632a282e',1,'Curves::Ellipse::Ellipse(Point&lt; T &gt; origin, Point&lt; T &gt; direction)']]]
 ];

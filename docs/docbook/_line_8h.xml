@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__line_8h" xml:lang="en-US">
+<title>Line.h File Reference</title>
+<indexterm><primary>Line.h</primary></indexterm>
+<para>
+
+<para>Line class interface and implementation. </para>
+ 
+</para>
+<programlisting linenumbering="unnumbered">#include &quot;Curve.h&quot;
+#include &quot;Point.h&quot;
+#include &lt;cmath&gt;
+#include &lt;string&gt;
+</programlisting>Include dependency graph for Line.h:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_line_8h__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+This graph shows which files directly or indirectly include this file:<para>
+    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="_line_8h__dep__incl.svg"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Classes    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_curves_1_1_line">Curves::Line&lt; T &gt;</link></para>
+
+<para><link linkend="_class_curves_1_1_curve">Curve</link>:<link linkend="_class_curves_1_1_line">Line</link>. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_curves">Curves</link></para>
+
+<para>Generic <link linkend="_namespace_curves">Curves</link> interfaces and implementations. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Detailed Description</title>
+
+<para>Line class interface and implementation. </para>
+</section>
+</section>
