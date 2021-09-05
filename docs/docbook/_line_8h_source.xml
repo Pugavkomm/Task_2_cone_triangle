@@ -16,7 +16,7 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 20 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_curves_1_1_line">Line</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_curves_1_1_curve">Curve</link>&lt;T&gt;&#32;{
 21 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:&#32;
 25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_line_1a9c7b60f218803c1925b79c874270e620">Line</link>();
-31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_line_1a9c7b60f218803c1925b79c874270e620">Line</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin,&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;direction);
+31 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_line_1a9c7b60f218803c1925b79c874270e620">Line</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;origin,&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;curve_parameter);
 38 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43">derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter);
 45 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453">point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter);
 51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="_class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74">type</link>();
@@ -32,18 +32,18 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 61 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_line_1a9c7b60f218803c1925b79c874270e620">Line&lt;T&gt;::Line</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;o,&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;d)
 62 &#32;&#32;&#32;&#32;{
 63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;set_origin(o);
-64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;set_direction(d);
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;set_curve_parameter(d);
 65 &#32;&#32;&#32;&#32;}
 66 
 67 
 68 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
 69 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43">Line&lt;T&gt;::derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter)&#32;{
-70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this-&gt;get_direction();&#32;
+70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this-&gt;get_curve_parameter();&#32;
 71 
 72 &#32;&#32;&#32;&#32;}
 73 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
 74 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453">Line&lt;T&gt;::point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter){
-75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this-&gt;get_origin()&#32;+&#32;this-&gt;get_direction()&#32;*&#32;parameter;
+75 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this-&gt;get_origin()&#32;+&#32;this-&gt;get_curve_parameter()&#32;*&#32;parameter;
 76 &#32;&#32;&#32;&#32;}
 77 
 78 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;

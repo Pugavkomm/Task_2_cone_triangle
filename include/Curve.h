@@ -24,19 +24,19 @@ namespace Curves {
          */
         Point<T> origin; 
         /**
-         * @brief The main parameter for the curve. To directly define the direction in the form `C (t) = origin + direction * parameter`. For an ellipse, the axes define their own radius for each.
+         * @brief The main parameter for the curve. To directly define the curve_parameter in the form `C (t) = origin + curve_parameter * parameter`. For an ellipse, the axes define their own radius for each.
          * 
          */
-        Point<T> direction; 
+        Point<T> curve_parameter; 
     public:
         /**
-         * @brief Default constructor that defines a point at the origin = (0, 0) and direction = (0, 0).
+         * @brief Default constructor that defines a point at the origin = (0, 0) and curve_parameter = (0, 0).
          */
         Curve();
         /**
-         * @brief Сonstructor that defines a point at the origin and direction.
+         * @brief Сonstructor that defines a point at the origin and curve_parameter.
          */
-        Curve(Point<T> origin, Point<T> direction);
+        Curve(Point<T> origin, Point<T> curve_parameter);
         /**
          * @brief Set the origin point
          * 
@@ -44,11 +44,11 @@ namespace Curves {
          */
         void set_origin(Point<T> origin);
         /**
-         * @brief Set the direction 
+         * @brief Set the curve_parameter 
          * 
-         * @param direction 
+         * @param curve_parameter 
          */
-        void set_direction(Point<T> direction);
+        void set_curve_parameter(Point<T> curve_parameter);
         /**
          * @brief Get the origin point
          * 
@@ -56,11 +56,11 @@ namespace Curves {
          */
         Point<T> get_origin();
         /**
-         * @brief Get the direction
+         * @brief Get the curve_parameter
          * 
          * @return Point<T> 
          */
-        Point<T> get_direction();
+        Point<T> get_curve_parameter();
         /**
          * @brief Return type curve
          * 
@@ -68,7 +68,7 @@ namespace Curves {
          */
         virtual std::string type();
         /**
-         * @brief Placeholder and Coincides with get_direction()
+         * @brief Placeholder and Coincides with get_curve_parameter()
          * 
          * @param parameter 
          * @return Point<T> 
@@ -92,9 +92,9 @@ namespace Curves{
     }
 
     template <typename T>
-    Curve<T>::Curve(Point<T> origin, Point<T> direction){
+    Curve<T>::Curve(Point<T> origin, Point<T> curve_parameter){
         this->set_origin(origin);
-        this->set_direction(origin);
+        this->set_curve_parameter(origin);
     }
 
     template <typename T>
@@ -103,8 +103,8 @@ namespace Curves{
     }
 
     template <typename T>
-    void Curve<T>::set_direction(Point<T> direction){
-        this->direction = direction; 
+    void Curve<T>::set_curve_parameter(Point<T> curve_parameter){
+        this->curve_parameter = curve_parameter; 
     }
 
     
@@ -114,8 +114,8 @@ namespace Curves{
     }
 
     template <typename T>
-    Point<T> Curve<T>::get_direction(){
-        return  direction;
+    Point<T> Curve<T>::get_curve_parameter(){
+        return  curve_parameter;
     }
 
     template <typename T>
@@ -125,7 +125,7 @@ namespace Curves{
 
     template <typename T>
     Point<T> Curve<T>::derivative(double parameter){
-        return direction; 
+        return curve_parameter; 
     }
     
     template <typename T> 

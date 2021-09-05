@@ -35,17 +35,17 @@ int main(int argc, char *argv[])
 	srand(time(0));
 	std::vector<std::unique_ptr<shape>> curves_vector;
 	std::array<double, DIM> origin_array;
-	std::array<double, DIM> direction_array;
+	std::array<double, DIM> curve_parameter_array;
 	
 	point origin;
-	point direction;
+	point curve_parameter;
 	for (int i = 0; i < number_of_curves; ++i){
 		origin.setPoint(coordinate{generate_random_value(), generate_random_value()});
-		direction.setPoint(coordinate{generate_random_value(), generate_random_value()});
-		curves_vector.emplace_back(std::make_unique<line>(origin, direction));
+		curve_parameter.setPoint(coordinate{generate_random_value(), generate_random_value()});
+		curves_vector.emplace_back(std::make_unique<line>(origin, curve_parameter));
 		origin.setPoint(coordinate{generate_random_value(), generate_random_value()});
-		direction.setPoint(coordinate{generate_random_value(PI_2), generate_random_value(PI_2)});
-		curves_vector.push_back(std::make_unique<ellipse>(origin, direction));
+		curve_parameter.setPoint(coordinate{generate_random_value(PI_2), generate_random_value(PI_2)});
+		curves_vector.push_back(std::make_unique<ellipse>(origin, curve_parameter));
 	}
 	for (auto const &el : curves_vector){
 		std::cout << el->type() << "\t Point: " << el->point_per_parameter(parameter)

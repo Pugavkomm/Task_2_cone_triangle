@@ -33,11 +33,11 @@ Collaboration diagram for Curves::Line&lt; T &gt;:<para>
         <itemizedlist>
             <listitem><para><anchor xml:id="_class_curves_1_1_line_1a9c7b60f218803c1925b79c874270e620"/><emphasis role="strong">Line</emphasis> ()</para>
 
-<para>Default constructor that defines a point at the origin = (0, 0) and direction = (0, 0). </para>
+<para>Default constructor that defines a point at the origin = (0, 0) and curve_parameter = (0, 0). </para>
 </listitem>
-            <listitem><para><link linkend="_class_curves_1_1_line_1a449872d1dfc7831033676cbf52d4f3b1">Line</link> (<link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; origin, <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; direction)</para>
+            <listitem><para><link linkend="_class_curves_1_1_line_1ae9f4a726ac2c852e9def4d5a024d3f6f">Line</link> (<link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; origin, <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; curve_parameter)</para>
 
-<para>Сonstructor that defines a point at the origin and direction. </para>
+<para>Сonstructor that defines a point at the origin and curve_parameter. </para>
 </listitem>
             <listitem><para>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43">derivative</link> (double parameter)</para>
 
@@ -62,13 +62,13 @@ class Curves::Line&lt; T &gt;</title></simplesect>
 </section>
 <section>
 <title>Constructor &amp; Destructor Documentation</title>
-<anchor xml:id="_class_curves_1_1_line_1a449872d1dfc7831033676cbf52d4f3b1"/><section>
+<anchor xml:id="_class_curves_1_1_line_1ae9f4a726ac2c852e9def4d5a024d3f6f"/><section>
     <title>Line()</title>
 <indexterm><primary>Line</primary><secondary>Curves::Line&lt; T &gt;</secondary></indexterm>
 <indexterm><primary>Curves::Line&lt; T &gt;</primary><secondary>Line</secondary></indexterm>
-<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_line">Curves::Line</link>&lt; T &gt;::<link linkend="_class_curves_1_1_line">Line</link> (<link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; origin, <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; direction)</computeroutput></para><para>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_line">Curves::Line</link>&lt; T &gt;::<link linkend="_class_curves_1_1_line">Line</link> (<link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; origin, <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; curve_parameter)</computeroutput></para><para>
 
-<para>Сonstructor that defines a point at the origin and direction. </para>
+<para>Сonstructor that defines a point at the origin and curve_parameter. </para>
 </para>
 
 <para>
@@ -87,8 +87,8 @@ Parameters</title>
 </entry>
                             </row>
                             <row>
-<entry>direction</entry><entry>
-<para>is direction </para>
+<entry>curve_parameter</entry><entry>
+<para>is curve_parameter </para>
 </entry>
                             </row>
                         </tbody>

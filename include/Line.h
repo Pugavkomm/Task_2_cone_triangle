@@ -20,15 +20,15 @@ namespace Curves{
     class Line : public Curve<T> {
     public: 
         /**
-         * @brief Default constructor that defines a point at the origin = (0, 0) and direction = (0, 0).
+         * @brief Default constructor that defines a point at the origin = (0, 0) and curve_parameter = (0, 0).
          */
         Line();
         /**
-         * @brief Сonstructor that defines a point at the origin and direction.
+         * @brief Сonstructor that defines a point at the origin and curve_parameter.
          * @param origin is origin
-         * @param direction is direction
+         * @param curve_parameter is curve_parameter
          */
-        Line(Point<T> origin, Point<T> direction);
+        Line(Point<T> origin, Point<T> curve_parameter);
         /**
          * @brief Method that return derivative per parameter
          * 
@@ -61,18 +61,18 @@ namespace Curves{
     Line<T>::Line(Point<T> o, Point<T> d)
     {
         this->set_origin(o);
-        this->set_direction(d);
+        this->set_curve_parameter(d);
     }
 
 
     template <typename T>
     Point<T> Line<T>::derivative(double parameter) {
-        return this->get_direction(); 
+        return this->get_curve_parameter(); 
 
     }
     template <typename T>
     Point<T> Line<T>::point_per_parameter(double parameter){
-        return this->get_origin() + this->get_direction() * parameter;
+        return this->get_origin() + this->get_curve_parameter() * parameter;
     }
 
     template <typename T>
