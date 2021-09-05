@@ -48,6 +48,12 @@ namespace Curves
              * @brief The method sets the coordinates of the point.
              * @param std::array is coordinates of input.
              */
+        /**
+         * @brief Construct a new Point object (Copy constructor)
+         * 
+         * @param other 
+         */
+        Point(const Point<T> &other);
         void setPoint(const std::array<T, DIM> &point);
         Point<T> operator+(const Point<T> &right);
         Point<T> operator-(const Point<T> &right);
@@ -72,6 +78,10 @@ namespace Curves{
     {
         this->point = point;
     }
+
+    template <typename T>
+    Point<T>::Point(const Point<T> &other): point(other.point) 
+    {}
 
     template <typename T>
     void Point<T>::setPoint(const std::array<T, DIM> &point){

@@ -68,14 +68,14 @@ namespace Curves {
          */
         virtual std::string type();
         /**
-         * @brief Placeholder and Coincides with get_curve_parameter()
+         * @brief Placeholder 
          * 
          * @param parameter 
          * @return Point<T> 
          */
         virtual Point<T> derivative(double parameter); //placholder 
         /**
-         * @brief Placeholder and Coincides with get_origin()
+         * @brief Placeholder 
          * 
          * @param parameter 
          * @return Point<T> 
@@ -125,12 +125,12 @@ namespace Curves{
 
     template <typename T>
     Point<T> Curve<T>::derivative(double parameter){
-        return curve_parameter; 
+        return Point<T>(); 
     }
     
     template <typename T> 
     Point<T> Curve<T>::point_per_parameter(double parameter){
-        return origin; 
+        return Point<T>(); 
     }
 }
 
