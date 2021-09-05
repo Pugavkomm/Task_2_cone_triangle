@@ -2,18 +2,26 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_curves_1_1_point" xml:lang="en-US">
 <title>Curves::Point&lt; T &gt; Class Template Reference</title>
 <indexterm><primary>Curves::Point&lt; T &gt;</primary></indexterm>
+<para>
+
+<para><link linkend="_class_curves_1_1_point">Point</link> is point in 2D space (because constant DIM = 2) </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Point.h&gt;</computeroutput>
+</para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Point</link> ()</para>
+            <listitem><para><emphasis role="strong">Point</emphasis> ()</para>
 
-<para>Default constructor that defines a point at the origin. </para>
+<para>Default constructor that defines a point. </para>
 </listitem>
-            <listitem><para><link linkend="_group___curves_1ga936d7aaac56fc6e3656a6e491db9c95a">Point</link> (T x1, T x2)</para>
+            <listitem><para><link linkend="_group___curves_1ga9b7a427b639dcd43e55ec8c0c719d781">Point</link> (const std::array&lt; T, DIM &gt; &amp;<link linkend="_class_curves_1_1_point">point</link>)</para>
 
 <para>The constructor defines point. </para>
 </listitem>
-            <listitem><para>void <link linkend="_group___curves_1ga402547dccd791ff753261fcb0c71c7fb">setPoint</link> (T x1, T x2)</para>
+            <listitem><para>void <link linkend="_group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4">setPoint</link> (const std::array&lt; T, DIM &gt; &amp;<link linkend="_class_curves_1_1_point">point</link>)</para>
 
 <para>The method sets the coordinates of the point. </para>
 </listitem>
@@ -36,6 +44,13 @@
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;typename T&gt;
+class Curves::Point&lt; T &gt;</title></simplesect>
+
+<para><link linkend="_class_curves_1_1_point">Point</link> is point in 2D space (because constant DIM = 2) </para>
 <para>
 The documentation for this class was generated from the following file:</para>
 <link linkend="__point_8h">Point.h</link></section>
+</section>

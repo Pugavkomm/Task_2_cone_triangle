@@ -1,8 +1,9 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
   <compounddef id="class_curves_1_1_ellipse" kind="class" language="C++" prot="public">
     <compoundname>Curves::Ellipse</compoundname>
     <basecompoundref refid="class_curves_1_1_line" prot="public" virt="non-virtual">Curves::Line&lt; T &gt;</basecompoundref>
+    <includes refid="_ellipse_8h" local="no">Ellipse.h</includes>
     <templateparamlist>
       <param>
         <type>typename T</type>
@@ -20,7 +21,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="13" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="13" bodyend="14"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="18" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="18" bodyend="19"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a6dc9776af355574ddfe54ac601f2f47a" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -41,7 +42,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="15" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="15" bodyend="17"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="20" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="20" bodyend="22"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -51,15 +52,28 @@
         <reimplements refid="class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43">derivative</reimplements>
         <param>
           <type>double</type>
-          <declname>parametr</declname>
+          <declname>parameter</declname>
         </param>
         <briefdescription>
+<para>Placeholder and Coincides with <ref refid="class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb" kindref="member">get_direction()</ref> </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Point&lt;T&gt; </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="18" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="32" bodyend="35"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="23" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="38" bodyend="42"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -72,12 +86,25 @@
           <declname>parameter</declname>
         </param>
         <briefdescription>
+<para>Placeholder and Coincides with <ref refid="class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31" kindref="member">get_origin()</ref> </para>
         </briefdescription>
         <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>parameter</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+<simplesect kind="return"><para>Point&lt;T&gt; </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="19" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="26" bodyend="29"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="24" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="31" bodyend="35"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
@@ -86,24 +113,27 @@
         <name>type</name>
         <reimplements refid="class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74">type</reimplements>
         <briefdescription>
+<para>Return type curve. </para>
         </briefdescription>
         <detaileddescription>
+<para><simplesect kind="return"><para>std::string </para>
+</simplesect>
+</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="20" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="38" bodyend="40"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="25" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="45" bodyend="47"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
+<para><ref refid="class_curves_1_1_curve" kindref="compound">Curve</ref>:<ref refid="class_curves_1_1_ellipse" kindref="compound">Ellipse</ref>. </para>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
     <inheritancegraph>
-      <node id="2">
-        <label>Curves::Line&lt; T &gt;</label>
-        <link refid="class_curves_1_1_line"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
+      <node id="3">
+        <label>Curves::Curve&lt; T &gt;</label>
+        <link refid="class_curves_1_1_curve"/>
       </node>
       <node id="1">
         <label>Curves::Ellipse&lt; T &gt;</label>
@@ -111,17 +141,17 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
-        <label>Curves::Curve&lt; T &gt;</label>
-        <link refid="class_curves_1_1_curve"/>
+      <node id="2">
+        <label>Curves::Line&lt; T &gt;</label>
+        <link refid="class_curves_1_1_line"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
       </node>
     </inheritancegraph>
     <collaborationgraph>
-      <node id="2">
-        <label>Curves::Line&lt; T &gt;</label>
-        <link refid="class_curves_1_1_line"/>
-        <childnode refid="3" relation="public-inheritance">
-        </childnode>
+      <node id="3">
+        <label>Curves::Curve&lt; T &gt;</label>
+        <link refid="class_curves_1_1_curve"/>
       </node>
       <node id="1">
         <label>Curves::Ellipse&lt; T &gt;</label>
@@ -129,12 +159,14 @@
         <childnode refid="2" relation="public-inheritance">
         </childnode>
       </node>
-      <node id="3">
-        <label>Curves::Curve&lt; T &gt;</label>
-        <link refid="class_curves_1_1_curve"/>
+      <node id="2">
+        <label>Curves::Line&lt; T &gt;</label>
+        <link refid="class_curves_1_1_line"/>
+        <childnode refid="3" relation="public-inheritance">
+        </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="11" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="11" bodyend="21"/>
+    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="16" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="16" bodyend="26"/>
     <listofallmembers>
       <member refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Curve</name></member>
       <member refid="class_curves_1_1_curve_1a7290d7306cbf2d250d99cac5c7a39646" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Curve</name></member>

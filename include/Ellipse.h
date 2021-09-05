@@ -6,7 +6,12 @@
 #include <cmath>
 #include <string>
 
+
 namespace Curves{
+    /**
+     * @brief Curve:Ellipse
+     * 
+     */
     template <typename T>
     class Ellipse : public Line<T>{
     public:
@@ -24,19 +29,21 @@ namespace Curves{
 namespace Curves{
     template <typename T>
     Point<T> Ellipse<T>::point_per_parameter(double parameter) {
-        Point<T> radi(cos(parameter), sin(parameter));
-        return this->get_origin() + this->get_direction() * radi;
+        std::array<T, DIM> circle = {cos(parameter), sin(parameter)};
+        Point<T> point_circle(circle);
+        return this->get_origin() + this->get_direction() * point_circle;
     }
 
     template <typename T>
     Point<T> Ellipse<T>::derivative(double parameter) {
-        Point<T> der_rad (-sin(parameter), cos(parameter));
-        return this->get_direction() * der_rad ;
+        std::array<T, DIM> der_circle = {-sin(parameter), cos(parameter)};
+        Point<T> point_der_circle (der_circle);
+        return this->get_direction() * point_der_circle;
     }
 
     template <typename T>
     std::string Ellipse<T>::type(){
-        return "Ellipse"; 
+        return "Curve:Ellipse"; 
     }
 }
     

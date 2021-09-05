@@ -7,6 +7,10 @@
 #include <string>
 
 namespace Curves{
+    /**
+     * @brief Curve:Line
+     * 
+     */
     template <typename T>
     class Line : public Curve<T> {
     public: 
@@ -43,6 +47,6 @@ namespace Curves{
 
     template <typename T>
     std::string Line<T>::type(){
-        return "Line";
+        return "Curve:Line";
     }
 }

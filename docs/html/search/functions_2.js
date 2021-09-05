@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['point_26',['Point',['../group___curves.html#ga48f5ad3fb47ee313d4e98e442690af39',1,'Curves::Point::Point()'],['../group___curves.html#ga936d7aaac56fc6e3656a6e491db9c95a',1,'Curves::Point::Point(T x1, T x2)']]]
+  ['get_5fdirection_0',['get_direction',['../class_curves_1_1_curve.html#a331320f4512ad35745f13c5ac11f41cb',1,'Curves::Curve']]],
+  ['get_5forigin_1',['get_origin',['../class_curves_1_1_curve.html#ab4a377ce4d09b127250412f3949dfc31',1,'Curves::Curve']]]
 ];

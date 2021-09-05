@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__ellipse_8h_source" xml:lang="en-US">
+<title>Ellipse.h</title>
+<indexterm><primary>Ellipse.h</primary></indexterm>
+<programlisting linenumbering="unnumbered">1 
+2 <emphasis role="preprocessor">#pragma&#32;once</emphasis>
+3 <emphasis role="preprocessor">#ifndef&#32;ELLIPSE</emphasis>
+4 <emphasis role="preprocessor">#define&#32;ELLIPSE</emphasis>
+5 <emphasis role="preprocessor">#include&#32;&quot;Line.h&quot;</emphasis>
+6 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
+7 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+8 
+9 
+10 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>{
+15 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+16 &#32;&#32;&#32;&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_curves_1_1_ellipse">Ellipse</link>&#32;:&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_curves_1_1_line">Line</link>&lt;T&gt;{
+17 &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>:
+18 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_ellipse">Ellipse</link>():&#32;<link linkend="_class_curves_1_1_line">Line&lt;T&gt;</link>(){
+19 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+20 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_ellipse">Ellipse</link>(<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;o,&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;d):&#32;<link linkend="_class_curves_1_1_line">Line&lt;T&gt;</link>(o,&#32;d){
+21 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+22 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+23 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b">derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parametr);
+24 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2">point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter);
+25 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">virtual</emphasis>&#32;std::string&#32;<link linkend="_class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e">type</link>();
+26 &#32;&#32;&#32;&#32;};
+27 }
+28 <emphasis role="preprocessor">#endif</emphasis>
+29 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>{
+30 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+31 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2">Ellipse&lt;T&gt;::point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter)&#32;{
+32 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;circle&#32;=&#32;{cos(parameter),&#32;sin(parameter)};
+33 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;point_circle(circle);
+34 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this-&gt;get_origin()&#32;+&#32;this-&gt;get_direction()&#32;*&#32;point_circle;
+35 &#32;&#32;&#32;&#32;}
+36 
+37 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+38 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b">Ellipse&lt;T&gt;::derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter)&#32;{
+39 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;der_circle&#32;=&#32;{-sin(parameter),&#32;cos(parameter)};
+40 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;point_der_circle&#32;(der_circle);
+41 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this-&gt;get_direction()&#32;*&#32;point_der_circle;
+42 &#32;&#32;&#32;&#32;}
+43 
+44 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+45 &#32;&#32;&#32;&#32;std::string&#32;<link linkend="_class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e">Ellipse&lt;T&gt;::type</link>(){
+46 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<emphasis role="stringliteral">&quot;Curve:Ellipse&quot;</emphasis>;&#32;
+47 &#32;&#32;&#32;&#32;}
+48 }
+49 &#32;&#32;&#32;&#32;
+</programlisting></section>

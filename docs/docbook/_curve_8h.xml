@@ -2,8 +2,9 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__curve_8h" xml:lang="en-US">
 <title>Curve.h File Reference</title>
 <indexterm><primary>Curve.h</primary></indexterm>
-<programlisting>#include &quot;Point.h&quot;
+<programlisting linenumbering="unnumbered">#include &quot;Point.h&quot;
 #include &lt;cmath&gt;
+#include &lt;string&gt;
 </programlisting>Include dependency graph for Curve.h:<para>
     <informalfigure>
         <mediaobject>
@@ -27,14 +28,14 @@ This graph shows which files directly or indirectly include this file:<para>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_curves_1_1_curve">Curves::Curve&lt; T &gt;</link></para>
 
-<para>Base class for curve hierarchy. </para>
+<para><link linkend="_class_curves_1_1_curve">Curve</link> hierarchy base class. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Namespaces    </title>
         <itemizedlist>
-            <listitem><para> <link linkend="_namespace_curves">Curves</link></para>
+            <listitem><para>namespace <link linkend="_namespace_curves">Curves</link></para>
 
 <para>Generic <link linkend="_namespace_curves">Curves</link> interfaces and implementations. </para>
 </listitem>

@@ -4,7 +4,7 @@
 <indexterm><primary>Curves::Curve&lt; T &gt;</primary></indexterm>
 <para>
 
-<para>Base class for curve hierarchy. </para>
+<para><link linkend="_class_curves_1_1_curve">Curve</link> hierarchy base class. </para>
  
 </para>
 <para>
@@ -22,11 +22,11 @@ Inheritance diagram for Curves::Curve&lt; T &gt;:<para>
 <simplesect>
     <title>Public Member Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd"/><link linkend="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd">Curve</link> ()</para>
+            <listitem><para><anchor xml:id="_class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd"/><emphasis role="strong">Curve</emphasis> ()</para>
 
 <para>Default constructor that defines a point at the origin = (0, 0) and direction = (0, 0). </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_curves_1_1_curve_1a7290d7306cbf2d250d99cac5c7a39646"/><link linkend="_class_curves_1_1_curve_1a7290d7306cbf2d250d99cac5c7a39646">Curve</link> (<link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; origin, <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; direction)</para>
+            <listitem><para><anchor xml:id="_class_curves_1_1_curve_1a7290d7306cbf2d250d99cac5c7a39646"/><emphasis role="strong">Curve</emphasis> (<link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; origin, <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; direction)</para>
 
 <para>Сonstructor that defines a point at the origin and direction. </para>
 </listitem>
@@ -46,6 +46,18 @@ Inheritance diagram for Curves::Curve&lt; T &gt;:<para>
 
 <para>Get the direction. </para>
 </listitem>
+            <listitem><para>virtual std::string <link linkend="_class_curves_1_1_curve_1a77576ec4580cb65f8c321f9cd781d170">type</link> ()</para>
+
+<para>Return type curve. </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_curve_1a77ccdde01f02dcf2f24e1cf4d8f02efb">derivative</link> (double parameter)</para>
+
+<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb">get_direction()</link> </para>
+</listitem>
+            <listitem><para>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_curve_1a2f26fde121d9942082233c25a94047ef">point_per_parameter</link> (double parameter)</para>
+
+<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">get_origin()</link> </para>
+</listitem>
         </itemizedlist>
 </simplesect>
 <section>
@@ -53,12 +65,48 @@ Inheritance diagram for Curves::Curve&lt; T &gt;:<para>
 <simplesect><title>template&lt;typename T&gt;
 class Curves::Curve&lt; T &gt;</title></simplesect>
 
-
-<para>Base class for curve hierarchy. </para>
+<para><link linkend="_class_curves_1_1_curve">Curve</link> hierarchy base class. </para>
 </section>
 <section>
 <title>Member Function Documentation</title>
-<anchor xml:id="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb"/>    <section>
+<anchor xml:id="_class_curves_1_1_curve_1a77ccdde01f02dcf2f24e1cf4d8f02efb"/><section>
+    <title>derivative()</title>
+<indexterm><primary>derivative</primary><secondary>Curves::Curve&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Curves::Curve&lt; T &gt;</primary><secondary>derivative</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_curve">Curves::Curve</link>&lt; T &gt;::derivative (double parameter)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb">get_direction()</link> </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>parameter</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Point&lt;T&gt; </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43">Curves::Line&lt; T &gt;</link>, and <link linkend="_class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b">Curves::Ellipse&lt; T &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb"/><section>
     <title>get_direction()</title>
 <indexterm><primary>get_direction</primary><secondary>Curves::Curve&lt; T &gt;</secondary></indexterm>
 <indexterm><primary>Curves::Curve&lt; T &gt;</primary><secondary>get_direction</secondary></indexterm>
@@ -72,7 +120,8 @@ class Curves::Curve&lt; T &gt;</title></simplesect>
 <para>Point&lt;T&gt; </para>
 </formalpara>
 </para>
-    </section><anchor xml:id="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31"/>    <section>
+</section>
+<anchor xml:id="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31"/><section>
     <title>get_origin()</title>
 <indexterm><primary>get_origin</primary><secondary>Curves::Curve&lt; T &gt;</secondary></indexterm>
 <indexterm><primary>Curves::Curve&lt; T &gt;</primary><secondary>get_origin</secondary></indexterm>
@@ -86,7 +135,45 @@ class Curves::Curve&lt; T &gt;</title></simplesect>
 <para>Point&lt;T&gt; </para>
 </formalpara>
 </para>
-    </section><anchor xml:id="_class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30"/>    <section>
+</section>
+<anchor xml:id="_class_curves_1_1_curve_1a2f26fde121d9942082233c25a94047ef"/><section>
+    <title>point_per_parameter()</title>
+<indexterm><primary>point_per_parameter</primary><secondary>Curves::Curve&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Curves::Curve&lt; T &gt;</primary><secondary>point_per_parameter</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_curve">Curves::Curve</link>&lt; T &gt;::point_per_parameter (double parameter)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">get_origin()</link> </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>parameter</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Point&lt;T&gt; </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2">Curves::Ellipse&lt; T &gt;</link>, and <link linkend="_class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453">Curves::Line&lt; T &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_curves_1_1_curve_1a22d509609010d1ca0380bc2fb1021f30"/><section>
     <title>set_direction()</title>
 <indexterm><primary>set_direction</primary><secondary>Curves::Curve&lt; T &gt;</secondary></indexterm>
 <indexterm><primary>Curves::Curve&lt; T &gt;</primary><secondary>set_direction</secondary></indexterm>
@@ -98,7 +185,7 @@ class Curves::Curve&lt; T &gt;</title></simplesect>
 <para>
                 <formalpara>
                     <title>
-Parameters                    </title>
+Parameters</title>
                     <para>
                     <table frame="all">
                         <tgroup cols="2" align="left" colsep="1" rowsep="1">
@@ -106,8 +193,7 @@ Parameters                    </title>
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-                                <entry>direction</entry>
-                                <entry>
+<entry>direction</entry><entry>
 <para></para>
 </entry>
                             </row>
@@ -117,7 +203,8 @@ Parameters                    </title>
                     </para>
                 </formalpara>
                 </para>
-    </section><anchor xml:id="_class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece"/>    <section>
+</section>
+<anchor xml:id="_class_curves_1_1_curve_1af8e63024ddec2589210a6528d28fbece"/><section>
     <title>set_origin()</title>
 <indexterm><primary>set_origin</primary><secondary>Curves::Curve&lt; T &gt;</secondary></indexterm>
 <indexterm><primary>Curves::Curve&lt; T &gt;</primary><secondary>set_origin</secondary></indexterm>
@@ -129,7 +216,7 @@ Parameters                    </title>
 <para>
                 <formalpara>
                     <title>
-Parameters                    </title>
+Parameters</title>
                     <para>
                     <table frame="all">
                         <tgroup cols="2" align="left" colsep="1" rowsep="1">
@@ -137,8 +224,7 @@ Parameters                    </title>
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-                                <entry>origin</entry>
-                                <entry>
+<entry>origin</entry><entry>
 <para></para>
 </entry>
                             </row>
@@ -148,6 +234,23 @@ Parameters                    </title>
                     </para>
                 </formalpara>
                 </para>
+</section>
+<anchor xml:id="_class_curves_1_1_curve_1a77576ec4580cb65f8c321f9cd781d170"/><section>
+    <title>type()</title>
+<indexterm><primary>type</primary><secondary>Curves::Curve&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Curves::Curve&lt; T &gt;</primary><secondary>type</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>std::string <link linkend="_class_curves_1_1_curve">Curves::Curve</link>&lt; T &gt;::type<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Return type curve. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>std::string </para>
+</formalpara>
+</para>
+<para>
+Reimplemented in <link linkend="_class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e">Curves::Ellipse&lt; T &gt;</link>, and <link linkend="_class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74">Curves::Line&lt; T &gt;</link>.</para>
 </section>
 <para>
 The documentation for this class was generated from the following file:</para>

@@ -13,10 +13,11 @@
 #define CURVE
 #include "Point.h"
 #include <cmath>
+#include <string>
 
 namespace Curves {
     /**
-     * @brief Base class for curve hierarchy
+     * @brief Curve hierarchy base class
      * 
      */
     template <typename T>
@@ -64,6 +65,26 @@ namespace Curves {
          * @return Point<T> 
          */
         Point<T> get_direction();
+        /**
+         * @brief Return type curve
+         * 
+         * @return std::string 
+         */
+        virtual std::string type();
+        /**
+         * @brief Placeholder and Coincides with get_direction()
+         * 
+         * @param parameter 
+         * @return Point<T> 
+         */
+        virtual Point<T> derivative(double parameter); //placholder 
+        /**
+         * @brief Placeholder and Coincides with get_origin()
+         * 
+         * @param parameter 
+         * @return Point<T> 
+         */
+        virtual Point<T> point_per_parameter(double parameter); //placholder
     };
 }
 #endif
@@ -98,7 +119,22 @@ namespace Curves{
 
     template <typename T>
     Point<T> Curve<T>::get_direction(){
+        return  direction;
+    }
+
+    template <typename T>
+    std::string Curve<T>::type(){
+        return "Curve:Base";
+    }
+
+    template <typename T>
+    Point<T> Curve<T>::derivative(double parameter){
         return direction; 
+    }
+    
+    template <typename T> 
+    Point<T> Curve<T>::point_per_parameter(double parameter){
+        return origin; 
     }
 }
 

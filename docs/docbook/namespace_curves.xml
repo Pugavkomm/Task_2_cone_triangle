@@ -12,15 +12,19 @@
         <itemizedlist>
             <listitem><para>class <link linkend="_class_curves_1_1_curve">Curve</link></para>
 
-<para>Base class for curve hierarchy. </para>
-</listitem>
-            <listitem><para>class <link linkend="_class_curves_1_1_curve_vector">CurveVector</link></para>
+<para><link linkend="_class_curves_1_1_curve">Curve</link> hierarchy base class. </para>
 </listitem>
             <listitem><para>class <link linkend="_class_curves_1_1_ellipse">Ellipse</link></para>
+
+<para><link linkend="_class_curves_1_1_curve">Curve</link>:<link linkend="_class_curves_1_1_ellipse">Ellipse</link>. </para>
 </listitem>
             <listitem><para>class <link linkend="_class_curves_1_1_line">Line</link></para>
+
+<para><link linkend="_class_curves_1_1_curve">Curve</link>:<link linkend="_class_curves_1_1_line">Line</link>. </para>
 </listitem>
             <listitem><para>class <link linkend="_class_curves_1_1_point">Point</link></para>
+
+<para><link linkend="_class_curves_1_1_point">Point</link> is point in 2D space (because constant DIM = 2) </para>
 </listitem>
         </itemizedlist>
 </simplesect>

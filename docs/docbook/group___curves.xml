@@ -3,24 +3,35 @@
 <title>Curves</title>
 <indexterm><primary>Curves</primary></indexterm>
 <simplesect>
+    <title>Namespaces    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_curves">Curves</link></para>
+
+<para>Generic <link linkend="_namespace_curves">Curves</link> interfaces and implementations. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_curves_1_1_point">Curves::Point&lt; T &gt;</link></para>
+
+<para><link linkend="_class_curves_1_1_point">Point</link> is point in 2D space (because constant DIM = 2) </para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Functions    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39"/><link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Curves::Point&lt; T &gt;::Point</link> ()</para>
+            <listitem><para><anchor xml:id="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39"/><emphasis role="strong">Curves::Point&lt; T &gt;::Point</emphasis> ()</para>
 
-<para>Default constructor that defines a point at the origin. </para>
+<para>Default constructor that defines a point. </para>
 </listitem>
-            <listitem><para><link linkend="_group___curves_1ga936d7aaac56fc6e3656a6e491db9c95a">Curves::Point&lt; T &gt;::Point</link> (T x1, T x2)</para>
+            <listitem><para><link linkend="_group___curves_1ga9b7a427b639dcd43e55ec8c0c719d781">Curves::Point&lt; T &gt;::Point</link> (const std::array&lt; T, DIM &gt; &amp;<link linkend="_class_curves_1_1_point">point</link>)</para>
 
 <para>The constructor defines point. </para>
 </listitem>
-            <listitem><para>void <link linkend="_group___curves_1ga402547dccd791ff753261fcb0c71c7fb">Curves::Point&lt; T &gt;::setPoint</link> (T x1, T x2)</para>
+            <listitem><para>void <link linkend="_group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4">Curves::Point&lt; T &gt;::setPoint</link> (const std::array&lt; T, DIM &gt; &amp;<link linkend="_class_curves_1_1_point">point</link>)</para>
 
 <para>The method sets the coordinates of the point. </para>
 </listitem>
@@ -34,14 +45,14 @@
 </listitem>
             <listitem><para><anchor xml:id="_group___curves_1ga3ca44f193f3c4b97784a9079aae8b28a"/><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp; <emphasis role="strong">Curves::Point&lt; T &gt;::operator=</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
 </listitem>
-            <listitem><para><anchor xml:id="_group___curves_1gaaaf81fd51af159386715a87c96fa0726"/>template&lt;typename T &gt; </para><para>std::ostream &amp; <emphasis role="strong">Curves::operator&lt;&lt;</emphasis> (std::ostream &amp;out, const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;p)</para>
+            <listitem><para><anchor xml:id="_group___curves_1gaf733009b4478009aba1743d320d31538"/>template&lt;typename T &gt; </para><para>std::ostream &amp; <emphasis role="strong">Curves::operator&lt;&lt;</emphasis> (std::ostream &amp;out, const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;p)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Friends    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_group___curves_1gaec5bfb35da7490af4de778c750079814"/>template&lt;typename U &gt; </para><para>std::ostream &amp; <emphasis role="strong">Curves::Point&lt; T &gt;::operator&lt;&lt;</emphasis> (std::ostream &amp;out, const <link linkend="_class_curves_1_1_point">Point</link>&lt; U &gt; &amp;p)</para>
+            <listitem><para><anchor xml:id="_group___curves_1gaca8fd2dea26fdb84710be2a17baa3c18"/>template&lt;typename U &gt; </para><para>std::ostream &amp; <emphasis role="strong">Curves::Point&lt; T &gt;::operator&lt;&lt;</emphasis> (std::ostream &amp;out, const <link linkend="_class_curves_1_1_point">Point</link>&lt; U &gt; &amp;p)</para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -50,11 +61,11 @@
 </section>
 <section>
 <title>Function Documentation</title>
-<anchor xml:id="_group___curves_1ga936d7aaac56fc6e3656a6e491db9c95a"/>    <section>
+<anchor xml:id="_group___curves_1ga9b7a427b639dcd43e55ec8c0c719d781"/><section>
     <title>Point()</title>
 <indexterm><primary>Point</primary><secondary>Curves</secondary></indexterm>
 <indexterm><primary>Curves</primary><secondary>Point</secondary></indexterm>
-<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_point">Curves::Point</link>&lt; T &gt;::<link linkend="_class_curves_1_1_point">Point</link> (T x1, T x2)</computeroutput></para><para>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_point">Curves::Point</link>&lt; T &gt;::<link linkend="_class_curves_1_1_point">Point</link> (const std::array&lt; T, DIM &gt; &amp; point)</computeroutput></para><para>
 
 <para>The constructor defines point. </para>
 </para>
@@ -62,7 +73,7 @@
 <para>
                 <formalpara>
                     <title>
-Parameters                    </title>
+Parameters</title>
                     <para>
                     <table frame="all">
                         <tgroup cols="2" align="left" colsep="1" rowsep="1">
@@ -70,9 +81,8 @@ Parameters                    </title>
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-                                <entry>coordinate</entry>
-                                <entry>
-<para>- point (x1, x2, x3, ..., DIM) </para>
+<entry>coordinate</entry><entry>
+<para>- point: array </para>
 </entry>
                             </row>
                         </tbody>
@@ -81,11 +91,12 @@ Parameters                    </title>
                     </para>
                 </formalpara>
                 </para>
-    </section><anchor xml:id="_group___curves_1ga402547dccd791ff753261fcb0c71c7fb"/>    <section>
+</section>
+<anchor xml:id="_group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4"/><section>
     <title>setPoint()</title>
 <indexterm><primary>setPoint</primary><secondary>Curves</secondary></indexterm>
 <indexterm><primary>Curves</primary><secondary>setPoint</secondary></indexterm>
-<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_curves_1_1_point">Curves::Point</link>&lt; T &gt;::setPoint (T x1, T x2)</computeroutput></para><para>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>void <link linkend="_class_curves_1_1_point">Curves::Point</link>&lt; T &gt;::setPoint (const std::array&lt; T, DIM &gt; &amp; point)</computeroutput></para><para>
 
 <para>The method sets the coordinates of the point. </para>
 </para>
@@ -93,7 +104,7 @@ Parameters                    </title>
 <para>
                 <formalpara>
                     <title>
-Parameters                    </title>
+Parameters</title>
                     <para>
                     <table frame="all">
                         <tgroup cols="2" align="left" colsep="1" rowsep="1">
@@ -101,9 +112,8 @@ Parameters                    </title>
                         <colspec colwidth="4*"/>
                         <tbody>
                             <row>
-                                <entry>x, y, z</entry>
-                                <entry>
-<para>are coordinates of input. </para>
+<entry>std::array</entry><entry>
+<para>is coordinates of input. </para>
 </entry>
                             </row>
                         </tbody>

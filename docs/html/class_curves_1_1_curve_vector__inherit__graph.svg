@@ -21,7 +21,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="class_curves_1_1_curve.html" target="_top" xlink:title="Base class for curve hierarchy.">
+<g id="a_node2"><a xlink:href="class_curves_1_1_curve.html" target="_top" xlink:title="template">
 <polygon fill="white" stroke="black" points="15.5,-56.5 15.5,-75.5 128.5,-75.5 128.5,-56.5 15.5,-56.5"/>
 <text text-anchor="middle" x="72" y="-63.5" font-family="Helvetica,sans-Serif" font-size="10.00">Curves::Curve&lt; T &gt;</text>
 </a>

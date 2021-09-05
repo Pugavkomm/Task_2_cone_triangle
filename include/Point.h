@@ -9,7 +9,7 @@
 #include "consts.h"
 #include <stdexcept>
 #include <string>
-#include <vector>
+#include <array>
 /*!
  *  \addtogroup Curves
  *  @{
@@ -18,6 +18,10 @@
 //! Generic Curves interfaces and implementations
 namespace Curves
 {
+    /**
+     * @brief Point is point in 2D space (because constant DIM = 2)
+     * 
+     */
     template <typename T> 
     class Point
     {
@@ -25,25 +29,25 @@ namespace Curves
          * @brief point = (x1, x2, ..., DIM). DIM - is space dimension 
          * 
          */
-        std::vector<T> point = {0, 0};
+        std::array<T, DIM> point;
     public:
         
         /**
-             * @brief Default constructor that defines a point at the origin.
+             * @brief Default constructor that defines a point. 
              */
         Point();
 
         /**
              * @brief The constructor defines point.
-             * @param coordinate - point (x1, x2, x3, ..., DIM)
+             * @param coordinate - point: array
              */
-        Point(T x1, T x2);
+        Point(const std::array<T, DIM> &point);
 
         /**
              * @brief The method sets the coordinates of the point.
-             * @param x, y, z are coordinates of input.
+             * @param std::array is coordinates of input.
              */
-        void setPoint(T x1, T x2);
+        void setPoint(const std::array<T, DIM> &point);
         void printPoint() const;
         Point<T> operator+(const Point<T> &right);
         Point<T> operator*( const Point<T> &right);
@@ -60,43 +64,48 @@ namespace Curves{
     Point<T>::Point(){}
 
     template <typename T>
-    Point<T>::Point(T x1, T x2)
+    Point<T>::Point(const std::array<T, DIM> &point)
     {
-        point[0] = x1;
-        point[1] = x2;
+        this->point = point;
     }
 
     template <typename T>
-    void Point<T>::setPoint(T x1, T x2){
-        point[0] = x1;
-        point[1] = x2;
+    void Point<T>::setPoint(const std::array<T, DIM> &point){
+        this->point = point;
     }
 
-    template<typename T>
-    void Point<T>::printPoint() const{
-        std::cout << '(' << point[0] << ", " << point[1] << ')' << '\n';
-    }
 
     template <typename T>
     Point<T> Point<T>::operator+(const Point<T> &right){
-        return Point<T>(this->point[0] + right.point[0], this->point[1] + right.point[1]);
+        std::array<T, DIM> out;
+        for (int i = 0; i < DIM; ++i){
+            out[i] = point[i] + right.point[i];
+        }
+        return out;
     }
 
     template <typename T>
     Point<T> Point<T>::operator*(const Point<T> &right){
-        return Point<T>(this->point[0] * right.point[0], this->point[1] * right.point[1]);
+        std::array<T, DIM> out;
+        for (int i = 0; i < DIM; ++i){
+            out[i] = point[i] * right.point[i];
+        }
+        return out;
     }
 
     template <typename T>
     Point<T> Point<T>::operator*(const double right){
-        return Point<T>(this->point[0] * right, this->point[1] * right);
+        std::array<T, DIM> out;
+        for (int i = 0; i < DIM; ++i){
+            out[i] = point[i] * right;
+        }
+        return out;
     }
 
     template <typename T>
     Point<T>& Point<T>::operator=(const Point<T> &right){
-        for (int i = 0; i < DIM; ++i){
-            this->point[i] = right.point[i];
-        }
+        this->point = right.point;
+        
         return *this;
     }
 
@@ -110,7 +119,7 @@ namespace Curves{
             out << ", ";
         }
     out << ')';
-    out << '\n';
+    
     return out;
 }
 

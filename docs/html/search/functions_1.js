@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['get_5fdirection_24',['get_direction',['../class_curves_1_1_curve.html#a331320f4512ad35745f13c5ac11f41cb',1,'Curves::Curve']]],
-  ['get_5forigin_25',['get_origin',['../class_curves_1_1_curve.html#ab4a377ce4d09b127250412f3949dfc31',1,'Curves::Curve']]]
+  ['derivative_0',['derivative',['../class_curves_1_1_curve.html#a77ccdde01f02dcf2f24e1cf4d8f02efb',1,'Curves::Curve::derivative()'],['../class_curves_1_1_ellipse.html#a38d49fc9a9baa42119c3e9bb24627c0b',1,'Curves::Ellipse::derivative()'],['../class_curves_1_1_line.html#a52f72d538ee15aa715fd6dc143d1ef43',1,'Curves::Line::derivative()']]]
 ];

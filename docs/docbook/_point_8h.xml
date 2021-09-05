@@ -7,11 +7,11 @@
 <para>Point class interface. </para>
  
 </para>
-<programlisting>#include &lt;iostream&gt;
+<programlisting linenumbering="unnumbered">#include &lt;iostream&gt;
 #include &quot;consts.h&quot;
 #include &lt;stdexcept&gt;
 #include &lt;string&gt;
-#include &lt;vector&gt;
+#include &lt;array&gt;
 </programlisting>Include dependency graph for Point.h:<para>
     <informalfigure>
         <mediaobject>
@@ -34,13 +34,15 @@ This graph shows which files directly or indirectly include this file:<para>
     <title>Classes    </title>
         <itemizedlist>
             <listitem><para>class <link linkend="_class_curves_1_1_point">Curves::Point&lt; T &gt;</link></para>
+
+<para><link linkend="_class_curves_1_1_point">Point</link> is point in 2D space (because constant DIM = 2) </para>
 </listitem>
         </itemizedlist>
 </simplesect>
 <simplesect>
     <title>Namespaces    </title>
         <itemizedlist>
-            <listitem><para> <link linkend="_namespace_curves">Curves</link></para>
+            <listitem><para>namespace <link linkend="_namespace_curves">Curves</link></para>
 
 <para>Generic <link linkend="_namespace_curves">Curves</link> interfaces and implementations. </para>
 </listitem>

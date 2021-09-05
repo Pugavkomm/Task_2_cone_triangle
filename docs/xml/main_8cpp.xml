@@ -1,39 +1,66 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
-<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.1" xml:lang="en-US">
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.9.2" xml:lang="en-US">
   <compounddef id="main_8cpp" kind="file" language="C++">
     <compoundname>main.cpp</compoundname>
     <includes local="no">iostream</includes>
+    <includes refid="consts_8h" local="yes">consts.h</includes>
+    <includes local="no">vector</includes>
     <includes refid="_point_8h" local="yes">Point.h</includes>
     <includes refid="_curve_8h" local="yes">Curve.h</includes>
     <includes refid="_line_8h" local="yes">Line.h</includes>
     <includes refid="_ellipse_8h" local="yes">Ellipse.h</includes>
-    <includes local="no">vector</includes>
+    <includes local="no">array</includes>
+    <includes local="no">memory</includes>
     <incdepgraph>
       <node id="9">
-        <label>cmath</label>
+        <label>Curve.h</label>
+        <link refid="_curve_8h"/>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="12">
+        <label>Ellipse.h</label>
+        <link refid="_ellipse_8h_source"/>
+        <childnode refid="11" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
+      </node>
+      <node id="11">
+        <label>Line.h</label>
+        <link refid="_line_8h_source"/>
+        <childnode refid="9" relation="include">
+        </childnode>
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="10" relation="include">
+        </childnode>
+        <childnode refid="7" relation="include">
+        </childnode>
       </node>
       <node id="5">
-        <label>stdexcept</label>
-      </node>
-      <node id="6">
-        <label>string</label>
-      </node>
-      <node id="3">
         <label>Point.h</label>
         <link refid="_point_8h"/>
         <childnode refid="2" relation="include">
         </childnode>
-        <childnode refid="4" relation="include">
-        </childnode>
-        <childnode refid="5" relation="include">
+        <childnode refid="3" relation="include">
         </childnode>
         <childnode refid="6" relation="include">
         </childnode>
         <childnode refid="7" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
       </node>
-      <node id="7">
-        <label>vector</label>
+      <node id="3">
+        <label>consts.h</label>
+        <link refid="consts_8h"/>
       </node>
       <node id="1">
         <label>main.cpp</label>
@@ -42,51 +69,41 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="8" relation="include">
+        <childnode refid="4" relation="include">
         </childnode>
-        <childnode refid="10" relation="include">
+        <childnode refid="5" relation="include">
+        </childnode>
+        <childnode refid="9" relation="include">
         </childnode>
         <childnode refid="11" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="12" relation="include">
         </childnode>
+        <childnode refid="8" relation="include">
+        </childnode>
+        <childnode refid="13" relation="include">
+        </childnode>
+      </node>
+      <node id="8">
+        <label>array</label>
+      </node>
+      <node id="10">
+        <label>cmath</label>
       </node>
       <node id="2">
         <label>iostream</label>
       </node>
-      <node id="8">
-        <label>Curve.h</label>
-        <link refid="_curve_8h"/>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
+      <node id="13">
+        <label>memory</label>
       </node>
-      <node id="11">
-        <label>Ellipse.h</label>
-        <link refid="_ellipse_8h_source"/>
-        <childnode refid="10" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
+      <node id="6">
+        <label>stdexcept</label>
       </node>
-      <node id="10">
-        <label>Line.h</label>
-        <link refid="_line_8h_source"/>
-        <childnode refid="8" relation="include">
-        </childnode>
-        <childnode refid="3" relation="include">
-        </childnode>
-        <childnode refid="9" relation="include">
-        </childnode>
-        <childnode refid="6" relation="include">
-        </childnode>
+      <node id="7">
+        <label>string</label>
       </node>
       <node id="4">
-        <label>consts.h</label>
-        <link refid="consts_8h"/>
+        <label>vector</label>
       </node>
     </incdepgraph>
       <sectiondef kind="typedef">
@@ -101,7 +118,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="8" column="1" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="8" bodyend="-1"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="10" column="1" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="10" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8cpp_1a90e1e7a7db1a80bca8299c990aa2e56b" prot="public" static="no">
         <type><ref refid="class_curves_1_1_line" kindref="compound">Curves::Line</ref>&lt; double &gt;</type>
@@ -114,7 +131,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="9" column="1" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="9" bodyend="-1"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="11" column="1" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="11" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8cpp_1ac0e29e7ace07aba75b874eac32e4c3f4" prot="public" static="no">
         <type><ref refid="class_curves_1_1_ellipse" kindref="compound">Curves::Ellipse</ref>&lt; double &gt;</type>
@@ -127,7 +144,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="10" column="1" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="10" bodyend="-1"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="12" column="1" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="12" bodyend="-1"/>
       </memberdef>
       <memberdef kind="typedef" id="main_8cpp_1ad2ac61982e65db6a64fdc80bc94fe295" prot="public" static="no">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Curves::Point</ref>&lt; double &gt;</type>
@@ -140,10 +157,90 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="11" column="1" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="11" bodyend="-1"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="13" column="1" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="13" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="typedef" id="main_8cpp_1ac3f864bfa0c0ca033085d12b7a06efbc" prot="public" static="no">
+        <type>std::array&lt; double, DIM &gt;</type>
+        <definition>using coordinate =  std::array&lt;double, DIM&gt;</definition>
+        <argsstring></argsstring>
+        <name>coordinate</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="14" column="1" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="14" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="var">
+      <memberdef kind="variable" id="main_8cpp_1a23e092a6a33380782b4dfe7a4a8793a5" prot="public" static="no" mutable="no">
+        <type>const int</type>
+        <definition>const int number_of_curves</definition>
+        <argsstring></argsstring>
+        <name>number_of_curves</name>
+        <initializer>= 20</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="15" column="11" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="15" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8cpp_1a6b3d5c53978e0462b2a839fb33c8cb98" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double parameter</definition>
+        <argsstring></argsstring>
+        <name>parameter</name>
+        <initializer>= M_PI / 4.0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="16" column="14" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="main_8cpp_1aea0d639eca72b0b16ec6f01c433c258d" prot="public" static="no" mutable="no">
+        <type>const double</type>
+        <definition>const double PI_2</definition>
+        <argsstring></argsstring>
+        <name>PI_2</name>
+        <initializer>= 2 * M_PI</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="17" column="14" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="17" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
+      <memberdef kind="function" id="main_8cpp_1a810775b13f398db2f01d82d26c14d556" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double generate_random_value</definition>
+        <argsstring>(double start=-10, double stop=10)</argsstring>
+        <name>generate_random_value</name>
+        <param>
+          <type>double</type>
+          <declname>start</declname>
+          <defval>-10</defval>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>stop</declname>
+          <defval>10</defval>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="19" column="8" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="19" bodyend="21"/>
+      </memberdef>
       <memberdef kind="function" id="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>int</type>
         <definition>int main</definition>
@@ -164,7 +261,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="13" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="13" bodyend="30"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" line="22" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp" bodystart="22" bodyend="47"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -173,35 +270,52 @@
     </detaileddescription>
     <programlisting>
 <codeline lineno="1"><highlight class="preprocessor">#include<sp/>&lt;iostream&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="2"><highlight class="normal"></highlight></codeline>
-<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_point_8h" kindref="compound">Point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_curve_8h" kindref="compound">Curve.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Line.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Ellipse.h&quot;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
-<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_curve" kindref="compound">shape</ref><sp/>=<sp/><ref refid="class_curves_1_1_curve" kindref="compound">Curves::Curve&lt;double&gt;</ref>;</highlight></codeline>
-<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_line" kindref="compound">line</ref><sp/>=<sp/><ref refid="class_curves_1_1_line" kindref="compound">Curves::Line&lt;double&gt;</ref>;</highlight></codeline>
-<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_ellipse" kindref="compound">ellipse</ref><sp/>=<sp/><ref refid="class_curves_1_1_ellipse" kindref="compound">Curves::Ellipse&lt;double&gt;</ref>;</highlight></codeline>
-<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_point" kindref="compound">point</ref><sp/>=<sp/><ref refid="class_curves_1_1_point" kindref="compound">Curves::Point&lt;double&gt;</ref>;</highlight></codeline>
-<codeline lineno="12"><highlight class="normal"></highlight></codeline>
-<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
-<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
-<codeline lineno="15"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;shape*&gt;<sp/>curves_vector;</highlight></codeline>
-<codeline lineno="16"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number_of_curves<sp/>=<sp/>20;<sp/></highlight></codeline>
-<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>parameter<sp/>=<sp/>M_PI;<sp/></highlight></codeline>
-<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">point</ref><sp/>o(2,<sp/>5);</highlight></codeline>
-<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">point</ref><sp/>d(3,<sp/>2);</highlight></codeline>
-<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_line" kindref="compound">line</ref><sp/>l(o,<sp/>d);</highlight></codeline>
-<codeline lineno="21"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_ellipse" kindref="compound">ellipse</ref><sp/>e<sp/>(o,<sp/>d);</highlight></codeline>
-<codeline lineno="22"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>l.get_origin()<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="23"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>l.point_per_parameter(parameter)<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>l.derivative(parameter)<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
-<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>e.point_per_parameter(parameter)<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>e.derivative(parameter)<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
-<codeline lineno="28"><highlight class="normal"></highlight></codeline>
-<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/></highlight></codeline>
-<codeline lineno="30"><highlight class="normal">}</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="consts_8h" kindref="compound">consts.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;vector&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_point_8h" kindref="compound">Point.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;<ref refid="_curve_8h" kindref="compound">Curve.h</ref>&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Line.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&quot;Ellipse.h&quot;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;array&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="preprocessor">#include<sp/>&lt;memory&gt;</highlight><highlight class="normal"></highlight></codeline>
+<codeline lineno="10"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_curve" kindref="compound">shape</ref><sp/>=<sp/><ref refid="class_curves_1_1_curve" kindref="compound">Curves::Curve&lt;double&gt;</ref>;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_line" kindref="compound">line</ref><sp/>=<sp/><ref refid="class_curves_1_1_line" kindref="compound">Curves::Line&lt;double&gt;</ref>;</highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_ellipse" kindref="compound">ellipse</ref><sp/>=<sp/><ref refid="class_curves_1_1_ellipse" kindref="compound">Curves::Ellipse&lt;double&gt;</ref>;</highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/><ref refid="class_curves_1_1_point" kindref="compound">point</ref><sp/>=<sp/><ref refid="class_curves_1_1_point" kindref="compound">Curves::Point&lt;double&gt;</ref>;</highlight></codeline>
+<codeline lineno="14"><highlight class="normal"></highlight><highlight class="keyword">using</highlight><highlight class="normal"><sp/>coordinate<sp/>=<sp/>std::array&lt;double,<sp/>DIM&gt;;</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>number_of_curves<sp/>=<sp/>20;</highlight></codeline>
+<codeline lineno="16"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>parameter<sp/>=<sp/>M_PI<sp/>/<sp/>4.0;</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>PI_2<sp/>=<sp/>2<sp/>*<sp/>M_PI;</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"></highlight></codeline>
+<codeline lineno="19"><highlight class="normal"></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>generate_random_value(</highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>start<sp/>=<sp/>-10,<sp/></highlight><highlight class="keywordtype">double</highlight><highlight class="normal"><sp/>stop<sp/>=<sp/>10){</highlight></codeline>
+<codeline lineno="20"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>start<sp/>+<sp/>(stop<sp/>-<sp/>start)<sp/>*<sp/></highlight><highlight class="keyword">static_cast&lt;</highlight><highlight class="keywordtype">double</highlight><highlight class="keyword">&gt;</highlight><highlight class="normal">(rand())<sp/>/<sp/>RAND_MAX;</highlight></codeline>
+<codeline lineno="21"><highlight class="normal">}<sp/></highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>main(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>argc,<sp/></highlight><highlight class="keywordtype">char</highlight><highlight class="normal"><sp/>*argv[])</highlight></codeline>
+<codeline lineno="23"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/>srand(time(0));</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/>std::vector&lt;std::unique_ptr&lt;shape&gt;&gt;<sp/>curves_vector;</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;double,<sp/>DIM&gt;<sp/>origin_array;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/>std::array&lt;double,<sp/>DIM&gt;<sp/>direction_array;</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">point</ref><sp/>origin;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><ref refid="class_curves_1_1_point" kindref="compound">point</ref><sp/>direction;</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keywordtype">int</highlight><highlight class="normal"><sp/>i<sp/>=<sp/>0;<sp/>i<sp/>&lt;<sp/>number_of_curves;<sp/>++i){</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>origin.<ref refid="group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4" kindref="member">setPoint</ref>(coordinate{generate_random_value(),<sp/>generate_random_value()});</highlight></codeline>
+<codeline lineno="33"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>direction.<ref refid="group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4" kindref="member">setPoint</ref>(coordinate{generate_random_value(),<sp/>generate_random_value()});</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curves_vector.emplace_back(std::make_unique&lt;line&gt;(origin,<sp/>direction));</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>origin.<ref refid="group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4" kindref="member">setPoint</ref>(coordinate{generate_random_value(),<sp/>generate_random_value()});</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>direction.<ref refid="group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4" kindref="member">setPoint</ref>(coordinate{generate_random_value(PI_2),<sp/>generate_random_value(PI_2)});</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>curves_vector.push_back(std::make_unique&lt;ellipse&gt;(origin,<sp/>direction));</highlight></codeline>
+<codeline lineno="38"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">for</highlight><highlight class="normal"><sp/>(</highlight><highlight class="keyword">auto</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">const</highlight><highlight class="normal"><sp/>&amp;el<sp/>:<sp/>curves_vector){</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>std::cout<sp/>&lt;&lt;<sp/>el-&gt;type()<sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;\t<sp/>Point:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>el-&gt;point_per_parameter(parameter)</highlight></codeline>
+<codeline lineno="41"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;per<sp/>parameter:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>parameter</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>&lt;&lt;<sp/></highlight><highlight class="stringliteral">&quot;and<sp/>first<sp/>derivative:<sp/>&quot;</highlight><highlight class="normal"><sp/>&lt;&lt;<sp/>el-&gt;derivative(parameter)<sp/>&lt;&lt;<sp/></highlight><highlight class="charliteral">&apos;\n&apos;</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"></highlight></codeline>
+<codeline lineno="45"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight></codeline>
+<codeline lineno="46"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keywordflow">return</highlight><highlight class="normal"><sp/>0;<sp/></highlight></codeline>
+<codeline lineno="47"><highlight class="normal">}</highlight></codeline>
     </programlisting>
     <location file="/home/mech/projects/cadexcharnger/Task_1_curve/src/main.cpp"/>
   </compounddef>

@@ -14,7 +14,6 @@
 <chapter>
     <title>Class Documentation</title>
     <xi:include href="class_curves_1_1_curve.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
-    <xi:include href="class_curves_1_1_curve_vector.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_curves_1_1_ellipse.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_curves_1_1_line.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="class_curves_1_1_point.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
@@ -22,8 +21,13 @@
 <chapter>
     <title>File Documentation</title>
     <xi:include href="consts_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="consts_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="_curve_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_curve_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_ellipse_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_line_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
     <xi:include href="_point_8h.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
+    <xi:include href="_point_8h_source.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
 </chapter>
 <index/>
 </book>

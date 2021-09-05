@@ -1,10 +1,10 @@
 var indexSectionsWithContent =
 {
-  0: "ceglps",
+  0: "cdeglpst",
   1: "celp",
   2: "c",
   3: "cp",
-  4: "cgps",
+  4: "cdgpst",
   5: "c"
 };
 

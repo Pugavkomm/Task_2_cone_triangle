@@ -2,6 +2,14 @@
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_curves_1_1_line" xml:lang="en-US">
 <title>Curves::Line&lt; T &gt; Class Template Reference</title>
 <indexterm><primary>Curves::Line&lt; T &gt;</primary></indexterm>
+<para>
+
+<para><link linkend="_class_curves_1_1_curve">Curve</link>:<link linkend="_class_curves_1_1_line">Line</link>. </para>
+ 
+</para>
+<para>
+<computeroutput>#include &lt;Line.h&gt;</computeroutput>
+</para>
 Inheritance diagram for Curves::Line&lt; T &gt;:<para>
     <informalfigure>
         <mediaobject>
@@ -25,14 +33,127 @@ Collaboration diagram for Curves::Line&lt; T &gt;:<para>
         <itemizedlist>
             <listitem><para><anchor xml:id="_class_curves_1_1_line_1a449872d1dfc7831033676cbf52d4f3b1"/><emphasis role="strong">Line</emphasis> (<link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; origin, <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; direction)</para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43"/>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">derivative</emphasis> (double parameter)</para>
+            <listitem><para>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43">derivative</link> (double parameter)</para>
+
+<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb">get_direction()</link> </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453"/>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">point_per_parameter</emphasis> (double parameter)</para>
+            <listitem><para>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453">point_per_parameter</link> (double parameter)</para>
+
+<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">get_origin()</link> </para>
 </listitem>
-            <listitem><para><anchor xml:id="_class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74"/>virtual std::string <emphasis role="strong">type</emphasis> ()</para>
+            <listitem><para>virtual std::string <link linkend="_class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74">type</link> ()</para>
+
+<para>Return type curve. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
+<section>
+<title>Detailed Description</title>
+<simplesect><title>template&lt;typename T&gt;
+class Curves::Line&lt; T &gt;</title></simplesect>
+
+<para><link linkend="_class_curves_1_1_curve">Curve</link>:<link linkend="_class_curves_1_1_line">Line</link>. </para>
+</section>
+<section>
+<title>Member Function Documentation</title>
+<anchor xml:id="_class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43"/><section>
+    <title>derivative()</title>
+<indexterm><primary>derivative</primary><secondary>Curves::Line&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Curves::Line&lt; T &gt;</primary><secondary>derivative</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_line">Curves::Line</link>&lt; T &gt;::derivative (double parameter)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1a331320f4512ad35745f13c5ac11f41cb">get_direction()</link> </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>parameter</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Point&lt;T&gt; </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_class_curves_1_1_curve_1a77ccdde01f02dcf2f24e1cf4d8f02efb">Curves::Curve&lt; T &gt;</link>.</para>
+<para>
+Reimplemented in <link linkend="_class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b">Curves::Ellipse&lt; T &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453"/><section>
+    <title>point_per_parameter()</title>
+<indexterm><primary>point_per_parameter</primary><secondary>Curves::Line&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Curves::Line&lt; T &gt;</primary><secondary>point_per_parameter</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_line">Curves::Line</link>&lt; T &gt;::point_per_parameter (double parameter)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">get_origin()</link> </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Parameters</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>parameter</entry><entry>
+<para></para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                <formalpara><title>Returns</title>
+
+<para>Point&lt;T&gt; </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_class_curves_1_1_curve_1a2f26fde121d9942082233c25a94047ef">Curves::Curve&lt; T &gt;</link>.</para>
+<para>
+Reimplemented in <link linkend="_class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2">Curves::Ellipse&lt; T &gt;</link>.</para>
+</section>
+<anchor xml:id="_class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74"/><section>
+    <title>type()</title>
+<indexterm><primary>type</primary><secondary>Curves::Line&lt; T &gt;</secondary></indexterm>
+<indexterm><primary>Curves::Line&lt; T &gt;</primary><secondary>type</secondary></indexterm>
+<computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput>std::string <link linkend="_class_curves_1_1_line">Curves::Line</link>&lt; T &gt;::type<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
+
+<para>Return type curve. </para>
+</para>
+
+<para><formalpara><title>Returns</title>
+
+<para>std::string </para>
+</formalpara>
+</para>
+<para>
+Reimplemented from <link linkend="_class_curves_1_1_curve_1a77576ec4580cb65f8c321f9cd781d170">Curves::Curve&lt; T &gt;</link>.</para>
+<para>
+Reimplemented in <link linkend="_class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e">Curves::Ellipse&lt; T &gt;</link>.</para>
+</section>
 <para>
 The documentation for this class was generated from the following file:</para>
 Line.h</section>
+</section>
