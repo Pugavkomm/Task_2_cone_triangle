@@ -18,13 +18,10 @@
 #include <array>
 #include <vector>
 #include <memory>
-using shape = Curves::Curve<double>;
-using line = Curves::Line<double>;
+#include <stdexcept>
 using ellipse = Curves::Ellipse<double>;
 using point = Curves::Point<double>;
 using coordinate = std::array<double, DIM>;
-const int number_of_curves = 20;
-const double parameter = M_PI / 4.0;
 const double PI_2 = 2 * M_PI;
 
 double generate_random_value(double start = -10, double stop = 10){
@@ -32,26 +29,28 @@ double generate_random_value(double start = -10, double stop = 10){
 } 
 int main(int argc, char *argv[])
 {
-	srand(time(0));
-	std::vector<std::unique_ptr<shape>> curves_vector;
-	std::array<double, DIM> origin_array;
-	std::array<double, DIM> curve_parameter_array;
-	
-	point origin;
-	point curve_parameter;
-	for (int i = 0; i < number_of_curves; ++i){
-		origin.setPoint(coordinate{generate_random_value(), generate_random_value()});
-		curve_parameter.setPoint(coordinate{generate_random_value(), generate_random_value()});
-		curves_vector.emplace_back(std::make_unique<line>(origin, curve_parameter));
-		origin.setPoint(coordinate{generate_random_value(), generate_random_value()});
-		curve_parameter.setPoint(coordinate{generate_random_value(PI_2), generate_random_value(PI_2)});
-		curves_vector.push_back(std::make_unique<ellipse>(origin, curve_parameter));
-	}
-	for (auto const &el : curves_vector){
-		std::cout << el->type() << "\t Point: " << el->point_per_parameter(parameter)
-	    << "per parameter: " << parameter
-		<< "and first derivative: " << el->derivative(parameter) << '\n';
-	}
+    double height = 10;
+    double radius = 5;
+    int number_of_segments = 10;
+    double step_parameter = PI_2 / number_of_segments;
+    ellipse circle(coordinate{0, 0, 0}, coordinate{radius, radius, 0});
+    point center(coordinate{0, 0, 0});
+    point top(coordinate {0, 0, radius}); 
+
+    std::cout << "A: " << top << '\n'; 
+    for (int i = 0; i < number_of_segments; ++i){
+        point vector_from_cone = circle.point_per_parameter(step_parameter * i) - center;
+        vector_from_cone = vector_from_cone / vector_from_cone.dist_between(vector_from_cone);
+        point normal = vector_from_cone * height / radius;
+        normal[2] = radius / height;
+        std::cout << "P" << i << ": " << circle.point_per_parameter(step_parameter * i) 
+        << "\t normal: " << normal
+        << "\n";
+    }
+	//if (argc < 3)
+    //{
+    //    throw std::invalid_argument("Error");
+    //}
 
 	
 	return 0; 

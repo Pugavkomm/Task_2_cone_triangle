@@ -58,14 +58,14 @@ namespace Curves{
 namespace Curves{
     template <typename T>
     Point<T> Ellipse<T>::point_per_parameter(double parameter) {
-        std::array<T, DIM> circle = {cos(parameter), sin(parameter)};
+        std::array<T, DIM> circle = {cos(parameter), sin(parameter), 0};
         Point<T> point_circle(circle);
         return this->get_origin() + this->get_curve_parameter() * point_circle;
     }
 
     template <typename T>
     Point<T> Ellipse<T>::derivative(double parameter) {
-        std::array<T, DIM> der_circle = {-sin(parameter), cos(parameter)};
+        std::array<T, DIM> der_circle = {-sin(parameter), cos(parameter), 0};
         Point<T> point_der_circle (der_circle);
         return this->get_curve_parameter() * point_der_circle;
     }

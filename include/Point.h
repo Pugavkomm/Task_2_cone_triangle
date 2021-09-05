@@ -10,6 +10,7 @@
 #include <stdexcept>
 #include <string>
 #include <array>
+#include <cmath>
 /*!
  *  \addtogroup Curves
  *  @{
@@ -49,9 +50,13 @@ namespace Curves
              */
         void setPoint(const std::array<T, DIM> &point);
         Point<T> operator+(const Point<T> &right);
+        Point<T> operator-(const Point<T> &right);
         Point<T> operator*( const Point<T> &right);
-        Point<T> operator*(const double right);
+        Point<T> operator*(double right);
+        Point<T> operator/(double right);
+        T & operator[](size_t index);
         Point<T>& operator=(const Point<T> &right);
+        double dist_between(const Point<T> &right);
         template < typename U >
         friend std::ostream & operator << (std::ostream &out, const Point<U> &p);
 
@@ -84,6 +89,24 @@ namespace Curves{
     }
 
     template <typename T>
+    Point<T> Point<T>::operator-(const Point<T> &right){
+        std::array<T, DIM> out;
+        for (int i = 0; i < DIM; ++i){
+            out[i] = point[i] - right.point[i];
+        }
+        return out;
+    }
+
+    template <typename T> 
+    double Point<T>::dist_between(const Point<T> &right){
+        double out = 0;
+        for (int i = 0; i < DIM; ++i){
+            out += point[i] * point[i] + right.point[i] * right.point[i];
+        }
+        return sqrt(out);
+    }
+
+    template <typename T>
     Point<T> Point<T>::operator*(const Point<T> &right){
         std::array<T, DIM> out;
         for (int i = 0; i < DIM; ++i){
@@ -93,12 +116,27 @@ namespace Curves{
     }
 
     template <typename T>
+    Point<T> Point<T>::operator/(double right){
+        std::array<T, DIM> out;
+        for (int i = 0; i < DIM; ++i){
+            out[i] = point[i] / right;
+        }
+        return out;
+    }
+
+
+    template <typename T>
     Point<T> Point<T>::operator*(const double right){
         std::array<T, DIM> out;
         for (int i = 0; i < DIM; ++i){
             out[i] = point[i] * right;
         }
         return out;
+    }
+
+    template <typename T>
+    T & Point<T>::operator[](size_t index){
+        return point[index];
     }
 
     template <typename T>

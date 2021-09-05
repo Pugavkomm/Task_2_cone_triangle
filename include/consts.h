@@ -8,5 +8,5 @@
  * @brief 2D space
  * 
  */
-static const int DIM = 2;
+static const int DIM = 3;
 #endif
