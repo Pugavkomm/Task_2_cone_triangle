@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Curve: main.cpp File Reference</title>
+<title>Cone triangle: main.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Curve
+   <div id="projectname">Cone triangle
    </div>
    <div id="projectbrief">The program in  that would implement</div>
   </td>
@@ -83,20 +83,16 @@ $(function() {
 <code>#include &lt;array&gt;</code><br />
 <code>#include &lt;vector&gt;</code><br />
 <code>#include &lt;memory&gt;</code><br />
+<code>#include &lt;stdexcept&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for main.cpp:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="main_8cpp__incl.svg" width="646" height="411"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div>
+<div class="center"><div class="zoom"><iframe scrolling="no" frameborder="0" src="main_8cpp__incl.svg" width="100%" height="600"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe></div></div>
 </div>
 </div><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="typedef-members" name="typedef-members"></a>
 Typedefs</h2></td></tr>
-<tr class="memitem:aeb9c2b853c6641432cdd6a578d07a6ca"><td class="memItemLeft" align="right" valign="top"><a id="aeb9c2b853c6641432cdd6a578d07a6ca" name="aeb9c2b853c6641432cdd6a578d07a6ca"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>shape</b> = <a class="el" href="class_curves_1_1_curve.html">Curves::Curve</a>&lt; double &gt;</td></tr>
-<tr class="separator:aeb9c2b853c6641432cdd6a578d07a6ca"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a90e1e7a7db1a80bca8299c990aa2e56b"><td class="memItemLeft" align="right" valign="top"><a id="a90e1e7a7db1a80bca8299c990aa2e56b" name="a90e1e7a7db1a80bca8299c990aa2e56b"></a>
-using&#160;</td><td class="memItemRight" valign="bottom"><b>line</b> = <a class="el" href="class_curves_1_1_line.html">Curves::Line</a>&lt; double &gt;</td></tr>
-<tr class="separator:a90e1e7a7db1a80bca8299c990aa2e56b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac0e29e7ace07aba75b874eac32e4c3f4"><td class="memItemLeft" align="right" valign="top"><a id="ac0e29e7ace07aba75b874eac32e4c3f4" name="ac0e29e7ace07aba75b874eac32e4c3f4"></a>
 using&#160;</td><td class="memItemRight" valign="bottom"><b>ellipse</b> = <a class="el" href="class_curves_1_1_ellipse.html">Curves::Ellipse</a>&lt; double &gt;</td></tr>
 <tr class="separator:ac0e29e7ace07aba75b874eac32e4c3f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -118,15 +114,12 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>main</b> (int argc, ch
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="var-members" name="var-members"></a>
 Variables</h2></td></tr>
-<tr class="memitem:a23e092a6a33380782b4dfe7a4a8793a5"><td class="memItemLeft" align="right" valign="top"><a id="a23e092a6a33380782b4dfe7a4a8793a5" name="a23e092a6a33380782b4dfe7a4a8793a5"></a>
-const int&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_curves</b> = 20</td></tr>
-<tr class="separator:a23e092a6a33380782b4dfe7a4a8793a5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6b3d5c53978e0462b2a839fb33c8cb98"><td class="memItemLeft" align="right" valign="top"><a id="a6b3d5c53978e0462b2a839fb33c8cb98" name="a6b3d5c53978e0462b2a839fb33c8cb98"></a>
-const double&#160;</td><td class="memItemRight" valign="bottom"><b>parameter</b> = M_PI / 4.0</td></tr>
-<tr class="separator:a6b3d5c53978e0462b2a839fb33c8cb98"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aea0d639eca72b0b16ec6f01c433c258d"><td class="memItemLeft" align="right" valign="top"><a id="aea0d639eca72b0b16ec6f01c433c258d" name="aea0d639eca72b0b16ec6f01c433c258d"></a>
 const double&#160;</td><td class="memItemRight" valign="bottom"><b>PI_2</b> = 2 * M_PI</td></tr>
 <tr class="separator:aea0d639eca72b0b16ec6f01c433c258d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2231b7a5f8d627a1f23a9945fd2afaaa"><td class="memItemLeft" align="right" valign="top"><a id="a2231b7a5f8d627a1f23a9945fd2afaaa" name="a2231b7a5f8d627a1f23a9945fd2afaaa"></a>
+const int&#160;</td><td class="memItemRight" valign="bottom"><b>number_of_programm_parameters_</b> = 4</td></tr>
+<tr class="separator:a2231b7a5f8d627a1f23a9945fd2afaaa"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Mechislav Pugavko </dd></dl>

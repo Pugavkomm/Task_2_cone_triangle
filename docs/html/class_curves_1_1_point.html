@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.2"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>Curve: Curves::Point&lt; T &gt; Class Template Reference</title>
+<title>Cone triangle: Curves::Point&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -21,7 +21,7 @@
  <tbody>
  <tr style="height: 56px;">
   <td id="projectalign" style="padding-left: 0.5em;">
-   <div id="projectname">Curve
+   <div id="projectname">Cone triangle
    </div>
    <div id="projectbrief">The program in  that would implement</div>
   </td>
@@ -89,21 +89,36 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ga9b7a427b639dcd43e55ec8c0c719d781"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curves.html#ga9b7a427b639dcd43e55ec8c0c719d781">Point</a> (const std::array&lt; T, DIM &gt; &amp;<a class="el" href="class_curves_1_1_point.html">point</a>)</td></tr>
 <tr class="memdesc:ga9b7a427b639dcd43e55ec8c0c719d781"><td class="mdescLeft">&#160;</td><td class="mdescRight">The constructor defines point.  <a href="group___curves.html#ga9b7a427b639dcd43e55ec8c0c719d781">More...</a><br /></td></tr>
 <tr class="separator:ga9b7a427b639dcd43e55ec8c0c719d781"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga7f6f8f05a8ec4ad0700541eb462f22f4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curves.html#ga7f6f8f05a8ec4ad0700541eb462f22f4">setPoint</a> (const std::array&lt; T, DIM &gt; &amp;<a class="el" href="class_curves_1_1_point.html">point</a>)</td></tr>
-<tr class="memdesc:ga7f6f8f05a8ec4ad0700541eb462f22f4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method sets the coordinates of the point.  <a href="group___curves.html#ga7f6f8f05a8ec4ad0700541eb462f22f4">More...</a><br /></td></tr>
+<tr class="memitem:ga94535ec7d38a7c08893ddf41d8ae447e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group___curves.html#ga94535ec7d38a7c08893ddf41d8ae447e">Point</a> (const <a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt; &amp;other)</td></tr>
+<tr class="memdesc:ga94535ec7d38a7c08893ddf41d8ae447e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The method sets the coordinates of the point.  <a href="group___curves.html#ga94535ec7d38a7c08893ddf41d8ae447e">More...</a><br /></td></tr>
+<tr class="separator:ga94535ec7d38a7c08893ddf41d8ae447e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga7f6f8f05a8ec4ad0700541eb462f22f4"><td class="memItemLeft" align="right" valign="top">
+void&#160;</td><td class="memItemRight" valign="bottom"><b>setPoint</b> (const std::array&lt; T, DIM &gt; &amp;<a class="el" href="class_curves_1_1_point.html">point</a>)</td></tr>
 <tr class="separator:ga7f6f8f05a8ec4ad0700541eb462f22f4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga62a20a6cd6bd25086d2290dadc453061"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator+</b> (const <a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt; &amp;right)</td></tr>
 <tr class="separator:ga62a20a6cd6bd25086d2290dadc453061"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga2bba8c9a42daf1576a4c85029d82df99"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator-</b> (const <a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="separator:ga2bba8c9a42daf1576a4c85029d82df99"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga4a05b56e6c7f2e0755b6ed1978afc79e"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const <a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt; &amp;right)</td></tr>
 <tr class="separator:ga4a05b56e6c7f2e0755b6ed1978afc79e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ga6770a6bfd2d0cbabccab64146cf7a123"><td class="memItemLeft" align="right" valign="top">
-<a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (const double right)</td></tr>
-<tr class="separator:ga6770a6bfd2d0cbabccab64146cf7a123"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga772a9992d57bdf4762c082d36c927241"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator*</b> (double right)</td></tr>
+<tr class="separator:ga772a9992d57bdf4762c082d36c927241"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga98c7746a6800ffa8ccc6028ed1d2bc60"><td class="memItemLeft" align="right" valign="top">
+<a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><b>operator/</b> (double right)</td></tr>
+<tr class="separator:ga98c7746a6800ffa8ccc6028ed1d2bc60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3c542d77d81fee05daf96625d571cade"><td class="memItemLeft" align="right" valign="top">
+T &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator[]</b> (size_t index)</td></tr>
+<tr class="separator:ga3c542d77d81fee05daf96625d571cade"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ga3ca44f193f3c4b97784a9079aae8b28a"><td class="memItemLeft" align="right" valign="top">
 <a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt; &amp;&#160;</td><td class="memItemRight" valign="bottom"><b>operator=</b> (const <a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt; &amp;right)</td></tr>
 <tr class="separator:ga3ca44f193f3c4b97784a9079aae8b28a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gabc1311e23758399a900501c912a18569"><td class="memItemLeft" align="right" valign="top">
+double&#160;</td><td class="memItemRight" valign="bottom"><b>dist_between</b> (const <a class="el" href="class_curves_1_1_point.html">Point</a>&lt; T &gt; &amp;right)</td></tr>
+<tr class="separator:gabc1311e23758399a900501c912a18569"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="friends" name="friends"></a>
 Friends</h2></td></tr>

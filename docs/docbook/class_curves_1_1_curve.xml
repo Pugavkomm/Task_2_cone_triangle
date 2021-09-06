@@ -52,11 +52,11 @@ Inheritance diagram for Curves::Curve&lt; T &gt;:<para>
 </listitem>
             <listitem><para>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_curve_1a77ccdde01f02dcf2f24e1cf4d8f02efb">derivative</link> (double parameter)</para>
 
-<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1adff2c86e495240176d8000a039881732">get_curve_parameter()</link> </para>
+<para>Placeholder. </para>
 </listitem>
             <listitem><para>virtual <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_curve_1a2f26fde121d9942082233c25a94047ef">point_per_parameter</link> (double parameter)</para>
 
-<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">get_origin()</link> </para>
+<para>Placeholder. </para>
 </listitem>
         </itemizedlist>
 </simplesect>
@@ -75,7 +75,7 @@ class Curves::Curve&lt; T &gt;</title></simplesect>
 <indexterm><primary>Curves::Curve&lt; T &gt;</primary><secondary>derivative</secondary></indexterm>
 <computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_curve">Curves::Curve</link>&lt; T &gt;::derivative (double parameter)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
-<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1adff2c86e495240176d8000a039881732">get_curve_parameter()</link> </para>
+<para>Placeholder. </para>
 </para>
 
 <para>
@@ -142,7 +142,7 @@ Reimplemented in <link linkend="_class_curves_1_1_line_1a52f72d538ee15aa715fd6dc
 <indexterm><primary>Curves::Curve&lt; T &gt;</primary><secondary>point_per_parameter</secondary></indexterm>
 <computeroutput>template&lt;typename T &gt; </computeroutput><para><computeroutput><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <link linkend="_class_curves_1_1_curve">Curves::Curve</link>&lt; T &gt;::point_per_parameter (double parameter)<computeroutput>[virtual]</computeroutput></computeroutput></para><para>
 
-<para>Placeholder and Coincides with <link linkend="_class_curves_1_1_curve_1ab4a377ce4d09b127250412f3949dfc31">get_origin()</link> </para>
+<para>Placeholder. </para>
 </para>
 
 <para>

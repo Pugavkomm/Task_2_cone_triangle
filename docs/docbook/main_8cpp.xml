@@ -11,6 +11,8 @@
 #include &lt;array&gt;
 #include &lt;vector&gt;
 #include &lt;memory&gt;
+#include &lt;stdexcept&gt;
+#include &lt;stdlib.h&gt;
 </programlisting>Include dependency graph for main.cpp:<para>
     <informalfigure>
         <mediaobject>
@@ -23,10 +25,6 @@
 <simplesect>
     <title>Typedefs    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_main_8cpp_1aeb9c2b853c6641432cdd6a578d07a6ca"/>using <emphasis role="strong">shape</emphasis> = <link linkend="_class_curves_1_1_curve">Curves::Curve</link>&lt; double &gt;</para>
-</listitem>
-            <listitem><para><anchor xml:id="_main_8cpp_1a90e1e7a7db1a80bca8299c990aa2e56b"/>using <emphasis role="strong">line</emphasis> = <link linkend="_class_curves_1_1_line">Curves::Line</link>&lt; double &gt;</para>
-</listitem>
             <listitem><para><anchor xml:id="_main_8cpp_1ac0e29e7ace07aba75b874eac32e4c3f4"/>using <emphasis role="strong">ellipse</emphasis> = <link linkend="_class_curves_1_1_ellipse">Curves::Ellipse</link>&lt; double &gt;</para>
 </listitem>
             <listitem><para><anchor xml:id="_main_8cpp_1ad2ac61982e65db6a64fdc80bc94fe295"/>using <emphasis role="strong">point</emphasis> = <link linkend="_class_curves_1_1_point">Curves::Point</link>&lt; double &gt;</para>
@@ -47,11 +45,9 @@
 <simplesect>
     <title>Variables    </title>
         <itemizedlist>
-            <listitem><para><anchor xml:id="_main_8cpp_1a23e092a6a33380782b4dfe7a4a8793a5"/>const int <emphasis role="strong">number_of_curves</emphasis> = 20</para>
-</listitem>
-            <listitem><para><anchor xml:id="_main_8cpp_1a6b3d5c53978e0462b2a839fb33c8cb98"/>const double <emphasis role="strong">parameter</emphasis> = M_PI / 4.0</para>
-</listitem>
             <listitem><para><anchor xml:id="_main_8cpp_1aea0d639eca72b0b16ec6f01c433c258d"/>const double <emphasis role="strong">PI_2</emphasis> = 2 * M_PI</para>
+</listitem>
+            <listitem><para><anchor xml:id="_main_8cpp_1a2231b7a5f8d627a1f23a9945fd2afaaa"/>const int <emphasis role="strong">number_of_programm_parameters_</emphasis> = 4</para>
 </listitem>
         </itemizedlist>
 </simplesect>

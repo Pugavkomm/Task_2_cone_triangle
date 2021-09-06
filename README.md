@@ -8,7 +8,7 @@ _Getting the coordinates is fairly easy to do. Point coordinates are always know
 ## Documentation
 [Documentation](http://95.182.120.16:3000/) for [Task_1_curve](https://github.com/Pugavkomm/Task_1_curve.git).
 
-[Documentation](http://95.182.120.16:3001/) for this project.
+
 
 
 ## Make

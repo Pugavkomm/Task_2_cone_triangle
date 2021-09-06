@@ -1,11 +1,10 @@
 <map id="Line.h" name="Line.h">
-<area shape="rect" id="node1" title="Line class interface and implementation." alt="" coords="331,5,392,32"/>
-<area shape="rect" id="node2" href="$_curve_8h.html" title="Curve class interface and implementation. Curve class is base class." alt="" coords="289,80,361,107"/>
-<area shape="rect" id="node3" href="$_point_8h.html" title="Point class interface and implementation." alt="" coords="220,155,287,181"/>
-<area shape="rect" id="node7" title=" " alt="" coords="401,229,460,256"/>
-<area shape="rect" id="node9" title=" " alt="" coords="362,155,425,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,229,85,256"/>
-<area shape="rect" id="node5" href="$consts_8h.html" title="Constants." alt="" coords="110,229,186,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="210,229,297,256"/>
-<area shape="rect" id="node8" title=" " alt="" coords="321,229,377,256"/>
+<area shape="rect" id="node1" title="Line class interface and implementation." alt="" coords="156,5,217,32"/>
+<area shape="rect" id="node2" href="$_curve_8h.html" title="Curve class interface and implementation. Curve class is base class." alt="" coords="188,80,260,107"/>
+<area shape="rect" id="node3" href="$_point_8h.html" title="Point class interface and implementation." alt="" coords="184,155,251,181"/>
+<area shape="rect" id="node6" title=" " alt="" coords="5,229,64,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="374,229,437,256"/>
+<area shape="rect" id="node4" title=" " alt="" coords="269,229,349,256"/>
+<area shape="rect" id="node5" href="$consts_8h.html" title="Constants." alt="" coords="89,229,165,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="189,229,245,256"/>
 </map>

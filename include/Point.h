@@ -7,7 +7,6 @@
 #define POINT
 #include <iostream>
 #include "consts.h"
-#include <stdexcept>
 #include <string>
 #include <array>
 #include <cmath>

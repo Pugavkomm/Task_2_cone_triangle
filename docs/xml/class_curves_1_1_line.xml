@@ -23,7 +23,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="25" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="59" bodyend="59"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" line="25" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" bodystart="59" bodyend="59"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_line_1ae9f4a726ac2c852e9def4d5a024d3f6f" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -63,7 +63,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="31" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="61" bodyend="65"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" line="31" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" bodystart="61" bodyend="65"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_line_1a52f72d538ee15aa715fd6dc143d1ef43" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -95,7 +95,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="38" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="69" bodyend="72"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" line="38" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" bodystart="69" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_line_1ab4a69fedd09aa06b52c0bb8948bc2453" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -127,7 +127,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="45" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="74" bodyend="76"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" line="45" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" bodystart="74" bodyend="76"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_line_1ab0a4814c8dd10e993746b28434ed4b74" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
@@ -146,7 +146,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="51" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="79" bodyend="81"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" line="51" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" bodystart="79" bodyend="81"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -184,7 +184,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="20" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="20" bodyend="52"/>
+    <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" line="20" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" bodystart="20" bodyend="52"/>
     <listofallmembers>
       <member refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" prot="public" virt="non-virtual"><scope>Curves::Line</scope><name>Curve</name></member>
       <member refid="class_curves_1_1_curve_1ac8237badf37cd235b0dc054bb34b15df" prot="public" virt="non-virtual"><scope>Curves::Line</scope><name>Curve</name></member>

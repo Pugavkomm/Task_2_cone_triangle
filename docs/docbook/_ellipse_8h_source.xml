@@ -26,14 +26,14 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 58 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>{
 59 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
 60 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2">Ellipse&lt;T&gt;::point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter)&#32;{
-61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;circle&#32;=&#32;{cos(parameter),&#32;sin(parameter)};
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;circle&#32;=&#32;{cos(parameter),&#32;sin(parameter),&#32;0};
 62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;point_circle(circle);
 63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this-&gt;get_origin()&#32;+&#32;this-&gt;get_curve_parameter()&#32;*&#32;point_circle;
 64 &#32;&#32;&#32;&#32;}
 65 
 66 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
 67 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b">Ellipse&lt;T&gt;::derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter)&#32;{
-68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;der_circle&#32;=&#32;{-sin(parameter),&#32;cos(parameter)};
+68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;der_circle&#32;=&#32;{-sin(parameter),&#32;cos(parameter),&#32;0};
 69 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;point_der_circle&#32;(der_circle);
 70 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;this-&gt;get_curve_parameter()&#32;*&#32;point_der_circle;
 71 &#32;&#32;&#32;&#32;}

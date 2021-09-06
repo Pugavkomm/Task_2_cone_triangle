@@ -69,12 +69,12 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 125 
 126 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
 127 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a77ccdde01f02dcf2f24e1cf4d8f02efb">Curve&lt;T&gt;::derivative</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter){
-128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;curve_parameter;&#32;
+128 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>();&#32;
 129 &#32;&#32;&#32;&#32;}
 130 &#32;&#32;&#32;&#32;
 131 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;&#32;
 132 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_curve_1a2f26fde121d9942082233c25a94047ef">Curve&lt;T&gt;::point_per_parameter</link>(<emphasis role="keywordtype">double</emphasis>&#32;parameter){
-133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;origin;&#32;
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>();&#32;
 134 &#32;&#32;&#32;&#32;}
 135 }
 136 

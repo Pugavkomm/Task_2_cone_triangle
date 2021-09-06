@@ -31,11 +31,16 @@
     <member refid="group___curves_1ga0d328299f7841d809eede3c7deb6fc07" kind="variable"><name>point</name></member>
     <member refid="group___curves_1ga48f5ad3fb47ee313d4e98e442690af39" kind="function"><name>Point</name></member>
     <member refid="group___curves_1ga9b7a427b639dcd43e55ec8c0c719d781" kind="function"><name>Point</name></member>
+    <member refid="group___curves_1ga94535ec7d38a7c08893ddf41d8ae447e" kind="function"><name>Point</name></member>
     <member refid="group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4" kind="function"><name>setPoint</name></member>
     <member refid="group___curves_1ga62a20a6cd6bd25086d2290dadc453061" kind="function"><name>operator+</name></member>
+    <member refid="group___curves_1ga2bba8c9a42daf1576a4c85029d82df99" kind="function"><name>operator-</name></member>
     <member refid="group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e" kind="function"><name>operator*</name></member>
-    <member refid="group___curves_1ga6770a6bfd2d0cbabccab64146cf7a123" kind="function"><name>operator*</name></member>
+    <member refid="group___curves_1ga772a9992d57bdf4762c082d36c927241" kind="function"><name>operator*</name></member>
+    <member refid="group___curves_1ga98c7746a6800ffa8ccc6028ed1d2bc60" kind="function"><name>operator/</name></member>
+    <member refid="group___curves_1ga3c542d77d81fee05daf96625d571cade" kind="function"><name>operator[]</name></member>
     <member refid="group___curves_1ga3ca44f193f3c4b97784a9079aae8b28a" kind="function"><name>operator=</name></member>
+    <member refid="group___curves_1gabc1311e23758399a900501c912a18569" kind="function"><name>dist_between</name></member>
     <member refid="group___curves_1gaca8fd2dea26fdb84710be2a17baa3c18" kind="friend"><name>operator&lt;&lt;</name></member>
   </compound>
   <compound refid="namespace_curves" kind="namespace"><name>Curves</name>
@@ -57,14 +62,11 @@
     <member refid="_point_8h_1a43011aabc923f9b33f1f51dc03b23539" kind="define"><name>POINT</name></member>
   </compound>
   <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
-    <member refid="main_8cpp_1aeb9c2b853c6641432cdd6a578d07a6ca" kind="typedef"><name>shape</name></member>
-    <member refid="main_8cpp_1a90e1e7a7db1a80bca8299c990aa2e56b" kind="typedef"><name>line</name></member>
     <member refid="main_8cpp_1ac0e29e7ace07aba75b874eac32e4c3f4" kind="typedef"><name>ellipse</name></member>
     <member refid="main_8cpp_1ad2ac61982e65db6a64fdc80bc94fe295" kind="typedef"><name>point</name></member>
     <member refid="main_8cpp_1ac3f864bfa0c0ca033085d12b7a06efbc" kind="typedef"><name>coordinate</name></member>
-    <member refid="main_8cpp_1a23e092a6a33380782b4dfe7a4a8793a5" kind="variable"><name>number_of_curves</name></member>
-    <member refid="main_8cpp_1a6b3d5c53978e0462b2a839fb33c8cb98" kind="variable"><name>parameter</name></member>
     <member refid="main_8cpp_1aea0d639eca72b0b16ec6f01c433c258d" kind="variable"><name>PI_2</name></member>
+    <member refid="main_8cpp_1a2231b7a5f8d627a1f23a9945fd2afaaa" kind="variable"><name>number_of_programm_parameters_</name></member>
     <member refid="main_8cpp_1a810775b13f398db2f01d82d26c14d556" kind="function"><name>generate_random_value</name></member>
     <member refid="main_8cpp_1a0ddf1224851353fc92bfbff6f499fa97" kind="function"><name>main</name></member>
   </compound>
@@ -72,11 +74,16 @@
     <member refid="group___curves_1ga0d328299f7841d809eede3c7deb6fc07" kind="variable"><name>point</name></member>
     <member refid="group___curves_1ga48f5ad3fb47ee313d4e98e442690af39" kind="function"><name>Point</name></member>
     <member refid="group___curves_1ga9b7a427b639dcd43e55ec8c0c719d781" kind="function"><name>Point</name></member>
+    <member refid="group___curves_1ga94535ec7d38a7c08893ddf41d8ae447e" kind="function"><name>Point</name></member>
     <member refid="group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4" kind="function"><name>setPoint</name></member>
     <member refid="group___curves_1ga62a20a6cd6bd25086d2290dadc453061" kind="function"><name>operator+</name></member>
+    <member refid="group___curves_1ga2bba8c9a42daf1576a4c85029d82df99" kind="function"><name>operator-</name></member>
     <member refid="group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e" kind="function"><name>operator*</name></member>
-    <member refid="group___curves_1ga6770a6bfd2d0cbabccab64146cf7a123" kind="function"><name>operator*</name></member>
+    <member refid="group___curves_1ga772a9992d57bdf4762c082d36c927241" kind="function"><name>operator*</name></member>
+    <member refid="group___curves_1ga98c7746a6800ffa8ccc6028ed1d2bc60" kind="function"><name>operator/</name></member>
+    <member refid="group___curves_1ga3c542d77d81fee05daf96625d571cade" kind="function"><name>operator[]</name></member>
     <member refid="group___curves_1ga3ca44f193f3c4b97784a9079aae8b28a" kind="function"><name>operator=</name></member>
+    <member refid="group___curves_1gabc1311e23758399a900501c912a18569" kind="function"><name>dist_between</name></member>
     <member refid="group___curves_1gaf733009b4478009aba1743d320d31538" kind="function"><name>operator&lt;&lt;</name></member>
     <member refid="group___curves_1gaca8fd2dea26fdb84710be2a17baa3c18" kind="friend"><name>operator&lt;&lt;</name></member>
   </compound>

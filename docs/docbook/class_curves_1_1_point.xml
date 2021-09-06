@@ -21,17 +21,27 @@
 
 <para>The constructor defines point. </para>
 </listitem>
-            <listitem><para>void <link linkend="_group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4">setPoint</link> (const std::array&lt; T, DIM &gt; &amp;<link linkend="_class_curves_1_1_point">point</link>)</para>
+            <listitem><para><link linkend="_group___curves_1ga94535ec7d38a7c08893ddf41d8ae447e">Point</link> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;other)</para>
 
 <para>The method sets the coordinates of the point. </para>
 </listitem>
+            <listitem><para>void <emphasis role="strong">setPoint</emphasis> (const std::array&lt; T, DIM &gt; &amp;<link linkend="_class_curves_1_1_point">point</link>)</para>
+</listitem>
             <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">operator+</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
+</listitem>
+            <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">operator-</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
 </listitem>
             <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">operator*</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
 </listitem>
-            <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">operator*</emphasis> (const double right)</para>
+            <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">operator*</emphasis> (double right)</para>
+</listitem>
+            <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; <emphasis role="strong">operator/</emphasis> (double right)</para>
+</listitem>
+            <listitem><para>T &amp; <emphasis role="strong">operator[]</emphasis> (size_t index)</para>
 </listitem>
             <listitem><para><link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp; <emphasis role="strong">operator=</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
+</listitem>
+            <listitem><para>double <emphasis role="strong">dist_between</emphasis> (const <link linkend="_class_curves_1_1_point">Point</link>&lt; T &gt; &amp;right)</para>
 </listitem>
         </itemizedlist>
 </simplesect>

@@ -14,9 +14,9 @@
         <link refid="_curve_8h"/>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="1">
@@ -26,9 +26,9 @@
         </childnode>
         <childnode refid="3" relation="include">
         </childnode>
-        <childnode refid="9" relation="include">
+        <childnode refid="8" relation="include">
         </childnode>
-        <childnode refid="7" relation="include">
+        <childnode refid="6" relation="include">
         </childnode>
       </node>
       <node id="3">
@@ -49,19 +49,16 @@
         <label>consts.h</label>
         <link refid="consts_8h"/>
       </node>
-      <node id="8">
+      <node id="7">
         <label>array</label>
       </node>
-      <node id="9">
+      <node id="8">
         <label>cmath</label>
       </node>
       <node id="4">
         <label>iostream</label>
       </node>
       <node id="6">
-        <label>stdexcept</label>
-      </node>
-      <node id="7">
         <label>string</label>
       </node>
     </incdepgraph>
@@ -96,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" line="8" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h" bodystart="8" bodyend="-1"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" line="8" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h" bodystart="8" bodyend="-1"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -155,6 +152,6 @@
 <codeline lineno="81"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="82"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Line.h"/>
+    <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Line.h"/>
   </compounddef>
 </doxygen>

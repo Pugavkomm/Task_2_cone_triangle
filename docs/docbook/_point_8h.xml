@@ -9,9 +9,9 @@
 </para>
 <programlisting linenumbering="unnumbered">#include &lt;iostream&gt;
 #include &quot;consts.h&quot;
-#include &lt;stdexcept&gt;
 #include &lt;string&gt;
 #include &lt;array&gt;
+#include &lt;cmath&gt;
 </programlisting>Include dependency graph for Point.h:<para>
     <informalfigure>
         <mediaobject>

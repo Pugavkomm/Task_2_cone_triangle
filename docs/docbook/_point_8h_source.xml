@@ -8,9 +8,9 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 7 <emphasis role="preprocessor">#define&#32;POINT</emphasis>
 8 <emphasis role="preprocessor">#include&#32;&lt;iostream&gt;</emphasis>
 9 <emphasis role="preprocessor">#include&#32;&quot;<link linkend="_consts_8h">consts.h</link>&quot;</emphasis>
-10 <emphasis role="preprocessor">#include&#32;&lt;stdexcept&gt;</emphasis>
-11 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
-12 <emphasis role="preprocessor">#include&#32;&lt;array&gt;</emphasis>
+10 <emphasis role="preprocessor">#include&#32;&lt;string&gt;</emphasis>
+11 <emphasis role="preprocessor">#include&#32;&lt;array&gt;</emphasis>
+12 <emphasis role="preprocessor">#include&#32;&lt;cmath&gt;</emphasis>
 19 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>
 20 {
 25 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;&#32;
@@ -23,80 +23,122 @@ Go to the documentation of this file.<programlisting linenumbering="unnumbered">
 39 
 44 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Point</link>(<emphasis role="keyword">const</emphasis>&#32;std::array&lt;T,&#32;DIM&gt;&#32;&amp;<link linkend="_class_curves_1_1_point">point</link>);
 45 
-50 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4">setPoint</link>(<emphasis role="keyword">const</emphasis>&#32;std::array&lt;T,&#32;DIM&gt;&#32;&amp;<link linkend="_class_curves_1_1_point">point</link>);
-51 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;operator+(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;right);
-52 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;operator*(&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;right);
-53 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;operator*(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>&#32;right);
-54 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&amp;&#32;operator=(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;right);
-55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;&#32;<emphasis role="keyword">typename</emphasis>&#32;U&#32;&gt;
-56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;std::ostream&#32;&amp;&#32;operator&#32;&lt;&lt;&#32;(std::ostream&#32;&amp;out,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;U&gt;</link>&#32;&amp;p);
-57 
-58 &#32;&#32;&#32;&#32;};
-59 }
-60 <emphasis role="preprocessor">#endif</emphasis>
-61 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>{
-62 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-63 &#32;&#32;&#32;&#32;<link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Point&lt;T&gt;::Point</link>(){}
-64 
-65 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-66 &#32;&#32;&#32;&#32;<link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Point&lt;T&gt;::Point</link>(<emphasis role="keyword">const</emphasis>&#32;std::array&lt;T,&#32;DIM&gt;&#32;&amp;<link linkend="_class_curves_1_1_point">point</link>)
-67 &#32;&#32;&#32;&#32;{
-68 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;point&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>;
-69 &#32;&#32;&#32;&#32;}
-70 
-71 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-72 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4">Point&lt;T&gt;::setPoint</link>(<emphasis role="keyword">const</emphasis>&#32;std::array&lt;T,&#32;DIM&gt;&#32;&amp;<link linkend="_class_curves_1_1_point">point</link>){
-73 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;point&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>;
-74 &#32;&#32;&#32;&#32;}
-75 
-76 
-77 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-78 &#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;::operator+</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;right){
-79 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;out;
-80 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
-81 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out[i]&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;+&#32;right.point[i];
-82 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-83 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
-84 &#32;&#32;&#32;&#32;}
-85 
-86 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-87 &#32;&#32;&#32;&#32;Point&lt;T&gt;&#32;Point&lt;T&gt;::operator*(<emphasis role="keyword">const</emphasis>&#32;Point&lt;T&gt;&#32;&amp;right){
-88 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;out;
-89 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
-90 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out[i]&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;*&#32;right.point[i];
-91 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-92 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
-93 &#32;&#32;&#32;&#32;}
-94 
-95 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-96 &#32;&#32;&#32;&#32;Point&lt;T&gt;&#32;Point&lt;T&gt;::operator*(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>&#32;right){
-97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;out;
-98 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
-99 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out[i]&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;*&#32;right;
-100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
-102 &#32;&#32;&#32;&#32;}
-103 
-104 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-105 &#32;&#32;&#32;&#32;Point&lt;T&gt;&amp;&#32;Point&lt;T&gt;::operator=(<emphasis role="keyword">const</emphasis>&#32;Point&lt;T&gt;&#32;&amp;right){
-106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_class_curves_1_1_point">point</link>&#32;=&#32;right.point;
-107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
-108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*<emphasis role="keyword">this</emphasis>;
-109 &#32;&#32;&#32;&#32;}
-110 
-111 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
-112 &#32;&#32;&#32;&#32;std::ostream&#32;&amp;&#32;operator&#32;&lt;&lt;&#32;(std::ostream&#32;&amp;out,&#32;<emphasis role="keyword">const</emphasis>&#32;Point&lt;T&gt;&#32;&amp;p)
-113 {
-114 &#32;&#32;&#32;&#32;out&#32;&lt;&lt;&#32;<emphasis role="charliteral">&apos;(&apos;</emphasis>;
-115 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
-116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out&#32;&lt;&lt;&#32;p.point[i];
-117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;&lt;&#32;DIM&#32;-&#32;1)
-118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;,&#32;&quot;</emphasis>;
-119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
-120 &#32;&#32;&#32;&#32;out&#32;&lt;&lt;&#32;<emphasis role="charliteral">&apos;)&apos;</emphasis>;
-121 &#32;&#32;&#32;&#32;
-122 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
-123 }
-124 
-125 }
+55 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Point</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;other);
+56 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;setPoint(<emphasis role="keyword">const</emphasis>&#32;std::array&lt;T,&#32;DIM&gt;&#32;&amp;<link linkend="_class_curves_1_1_point">point</link>);
+57 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;operator+(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;right);
+58 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;operator-(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;right);
+59 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;operator*(&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;right);
+60 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;operator*(<emphasis role="keywordtype">double</emphasis>&#32;right);
+61 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;operator/(<emphasis role="keywordtype">double</emphasis>&#32;right);
+62 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;T&#32;&amp;&#32;operator[](<emphasis role="keywordtype">size_t</emphasis>&#32;index);
+63 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&amp;&#32;operator=(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;right);
+64 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;dist_between(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;right);
+65 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;&#32;<emphasis role="keyword">typename</emphasis>&#32;U&#32;&gt;
+66 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">friend</emphasis>&#32;std::ostream&#32;&amp;&#32;operator&#32;&lt;&lt;&#32;(std::ostream&#32;&amp;out,&#32;<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;U&gt;</link>&#32;&amp;p);
+67 
+68 &#32;&#32;&#32;&#32;};
+69 }
+70 <emphasis role="preprocessor">#endif</emphasis>
+71 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_curves">Curves</link>{
+72 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+73 &#32;&#32;&#32;&#32;<link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Point&lt;T&gt;::Point</link>(){}
+74 
+75 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+76 &#32;&#32;&#32;&#32;<link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Point&lt;T&gt;::Point</link>(<emphasis role="keyword">const</emphasis>&#32;std::array&lt;T,&#32;DIM&gt;&#32;&amp;<link linkend="_class_curves_1_1_point">point</link>)
+77 &#32;&#32;&#32;&#32;{
+78 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;point&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>;
+79 &#32;&#32;&#32;&#32;}
+80 
+81 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+82 &#32;&#32;&#32;&#32;<link linkend="_group___curves_1ga48f5ad3fb47ee313d4e98e442690af39">Point&lt;T&gt;::Point</link>(<emphasis role="keyword">const</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;</link>&#32;&amp;other):&#32;<link linkend="_class_curves_1_1_point">point</link>(other.<link linkend="_class_curves_1_1_point">point</link>)&#32;
+83 &#32;&#32;&#32;&#32;{}
+84 
+85 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+86 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_curves_1_1_point">Point&lt;T&gt;::setPoint</link>(<emphasis role="keyword">const</emphasis>&#32;std::array&lt;T,&#32;DIM&gt;&#32;&amp;<link linkend="_class_curves_1_1_point">point</link>){
+87 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;point&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>;
+88 &#32;&#32;&#32;&#32;}
+89 
+90 
+91 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+92 &#32;&#32;&#32;&#32;Point&lt;T&gt;&#32;Point&lt;T&gt;::operator+(<emphasis role="keyword">const</emphasis>&#32;Point&lt;T&gt;&#32;&amp;right){
+93 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;out;
+94 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
+95 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out[i]&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;+&#32;right.point[i];
+96 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+97 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
+98 &#32;&#32;&#32;&#32;}
+99 
+100 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+101 &#32;&#32;&#32;&#32;Point&lt;T&gt;&#32;Point&lt;T&gt;::operator-(<emphasis role="keyword">const</emphasis>&#32;Point&lt;T&gt;&#32;&amp;right){
+102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;out;
+103 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
+104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out[i]&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;-&#32;right.point[i];
+105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+106 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
+107 &#32;&#32;&#32;&#32;}
+108 
+109 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;&#32;
+110 &#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;Point&lt;T&gt;::dist_between(<emphasis role="keyword">const</emphasis>&#32;Point&lt;T&gt;&#32;&amp;right){
+111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">double</emphasis>&#32;out&#32;=&#32;0;
+112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
+113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out&#32;+=&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;*&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;+&#32;right.point[i]&#32;*&#32;right.point[i];
+114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;sqrt(out);
+116 &#32;&#32;&#32;&#32;}
+117 
+118 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+119 &#32;&#32;&#32;&#32;Point&lt;T&gt;&#32;Point&lt;T&gt;::operator*(<emphasis role="keyword">const</emphasis>&#32;Point&lt;T&gt;&#32;&amp;right){
+120 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;out;
+121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
+122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out[i]&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;*&#32;right.point[i];
+123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+124 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
+125 &#32;&#32;&#32;&#32;}
+126 
+127 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+128 &#32;&#32;&#32;&#32;Point&lt;T&gt;&#32;Point&lt;T&gt;::operator/(<emphasis role="keywordtype">double</emphasis>&#32;right){
+129 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;out;
+130 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
+131 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out[i]&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;/&#32;right;
+132 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+133 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
+134 &#32;&#32;&#32;&#32;}
+135 
+136 
+137 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+138 &#32;&#32;&#32;&#32;Point&lt;T&gt;&#32;Point&lt;T&gt;::operator*(<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">double</emphasis>&#32;right){
+139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;std::array&lt;T,&#32;DIM&gt;&#32;out;
+140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
+141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out[i]&#32;=&#32;<link linkend="_class_curves_1_1_point">point</link>[i]&#32;*&#32;right;
+142 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+143 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
+144 &#32;&#32;&#32;&#32;}
+145 
+146 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+147 &#32;&#32;&#32;&#32;T&#32;&amp;&#32;Point&lt;T&gt;::operator[](<emphasis role="keywordtype">size_t</emphasis>&#32;index){
+148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;<link linkend="_class_curves_1_1_point">point</link>[index];
+149 &#32;&#32;&#32;&#32;}
+150 
+151 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+152 &#32;&#32;&#32;&#32;Point&lt;T&gt;&amp;&#32;Point&lt;T&gt;::operator=(<emphasis role="keyword">const</emphasis>&#32;Point&lt;T&gt;&#32;&amp;right){
+153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this-&gt;<link linkend="_class_curves_1_1_point">point</link>&#32;=&#32;right.point;
+154 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+155 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;*<emphasis role="keyword">this</emphasis>;
+156 &#32;&#32;&#32;&#32;}
+157 
+158 &#32;&#32;&#32;&#32;<emphasis role="keyword">template</emphasis>&#32;&lt;<emphasis role="keyword">typename</emphasis>&#32;T&gt;
+159 &#32;&#32;&#32;&#32;std::ostream&#32;&amp;&#32;operator&#32;&lt;&lt;&#32;(std::ostream&#32;&amp;out,&#32;<emphasis role="keyword">const</emphasis>&#32;Point&lt;T&gt;&#32;&amp;p)
+160 {
+161 &#32;&#32;&#32;&#32;out&#32;&lt;&lt;&#32;<emphasis role="charliteral">&apos;(&apos;</emphasis>;
+162 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">for</emphasis>&#32;(<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;&#32;i&#32;&lt;&#32;DIM;&#32;++i){
+163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out&#32;&lt;&lt;&#32;p.point[i];
+164 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(i&#32;&lt;&#32;DIM&#32;-&#32;1)
+165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;out&#32;&lt;&lt;&#32;<emphasis role="stringliteral">&quot;,&#32;&quot;</emphasis>;
+166 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+167 &#32;&#32;&#32;&#32;out&#32;&lt;&lt;&#32;<emphasis role="charliteral">&apos;)&apos;</emphasis>;
+168 &#32;&#32;&#32;&#32;
+169 &#32;&#32;&#32;&#32;<emphasis role="keywordflow">return</emphasis>&#32;out;
+170 }
+171 
+172 }
 </programlisting></section>

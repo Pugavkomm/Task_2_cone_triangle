@@ -18,7 +18,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="32" column="20" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="32" bodyend="-1"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="32" column="20" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="32" bodyend="-1"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="func">
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="38" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="63" bodyend="63"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="38" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="73" bodyend="73"/>
       </memberdef>
       <memberdef kind="function" id="group___curves_1ga9b7a427b639dcd43e55ec8c0c719d781" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type></type>
@@ -62,7 +62,45 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="44" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="66" bodyend="69"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="44" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga94535ec7d38a7c08893ddf41d8ae447e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type></type>
+        <definition>Curves::Point&lt; T &gt;::Point</definition>
+        <argsstring>(const Point&lt; T &gt; &amp;other)</argsstring>
+        <name>Point</name>
+        <param>
+          <type>const Point&lt; T &gt; &amp;</type>
+          <declname>other</declname>
+        </param>
+        <briefdescription>
+<para>The method sets the coordinates of the point. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>std::array</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>is coordinates of input.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+Construct a new <ref refid="class_curves_1_1_point" kindref="compound">Point</ref> object (Copy constructor)</para>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>other</parametername>
+</parameternamelist>
+<parameterdescription>
+<para></para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="55" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="82" bodyend="83"/>
       </memberdef>
       <memberdef kind="function" id="group___curves_1ga7f6f8f05a8ec4ad0700541eb462f22f4" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>void</type>
@@ -74,23 +112,12 @@
           <declname>point</declname>
         </param>
         <briefdescription>
-<para>The method sets the coordinates of the point. </para>
         </briefdescription>
         <detaileddescription>
-<para><parameterlist kind="param"><parameteritem>
-<parameternamelist>
-<parametername>std::array</parametername>
-</parameternamelist>
-<parameterdescription>
-<para>is coordinates of input. </para>
-</parameterdescription>
-</parameteritem>
-</parameterlist>
-</para>
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="50" column="14" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="72" bodyend="74"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="56" column="14" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="86" bodyend="88"/>
       </memberdef>
       <memberdef kind="function" id="group___curves_1ga62a20a6cd6bd25086d2290dadc453061" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Point&lt; T &gt;</type>
@@ -107,7 +134,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="51" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="78" bodyend="84"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="57" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="92" bodyend="98"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga2bba8c9a42daf1576a4c85029d82df99" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Point&lt; T &gt;</type>
+        <definition>Point&lt; T &gt; Curves::Point&lt; T &gt;::operator-</definition>
+        <argsstring>(const Point&lt; T &gt; &amp;right)</argsstring>
+        <name>operator-</name>
+        <param>
+          <type>const Point&lt; T &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="58" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="101" bodyend="107"/>
       </memberdef>
       <memberdef kind="function" id="group___curves_1ga4a05b56e6c7f2e0755b6ed1978afc79e" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Point&lt; T &gt;</type>
@@ -124,15 +168,15 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="52" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="87" bodyend="93"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="59" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="119" bodyend="125"/>
       </memberdef>
-      <memberdef kind="function" id="group___curves_1ga6770a6bfd2d0cbabccab64146cf7a123" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+      <memberdef kind="function" id="group___curves_1ga772a9992d57bdf4762c082d36c927241" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Point&lt; T &gt;</type>
         <definition>Point&lt; T &gt; Curves::Point&lt; T &gt;::operator*</definition>
-        <argsstring>(const double right)</argsstring>
+        <argsstring>(double right)</argsstring>
         <name>operator*</name>
         <param>
-          <type>const double</type>
+          <type>double</type>
           <declname>right</declname>
         </param>
         <briefdescription>
@@ -141,7 +185,41 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="53" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="96" bodyend="102"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="60" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="138" bodyend="144"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga98c7746a6800ffa8ccc6028ed1d2bc60" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>Point&lt; T &gt;</type>
+        <definition>Point&lt; T &gt; Curves::Point&lt; T &gt;::operator/</definition>
+        <argsstring>(double right)</argsstring>
+        <name>operator/</name>
+        <param>
+          <type>double</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="61" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="128" bodyend="134"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1ga3c542d77d81fee05daf96625d571cade" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>T &amp;</type>
+        <definition>T &amp; Curves::Point&lt; T &gt;::operator[]</definition>
+        <argsstring>(size_t index)</argsstring>
+        <name>operator[]</name>
+        <param>
+          <type>size_t</type>
+          <declname>index</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="62" column="12" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="147" bodyend="149"/>
       </memberdef>
       <memberdef kind="function" id="group___curves_1ga3ca44f193f3c4b97784a9079aae8b28a" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <type>Point&lt; T &gt; &amp;</type>
@@ -158,7 +236,24 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="54" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="105" bodyend="109"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="63" column="15" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="152" bodyend="156"/>
+      </memberdef>
+      <memberdef kind="function" id="group___curves_1gabc1311e23758399a900501c912a18569" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type>double</type>
+        <definition>double Curves::Point&lt; T &gt;::dist_between</definition>
+        <argsstring>(const Point&lt; T &gt; &amp;right)</argsstring>
+        <name>dist_between</name>
+        <param>
+          <type>const Point&lt; T &gt; &amp;</type>
+          <declname>right</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="64" column="16" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="110" bodyend="116"/>
       </memberdef>
       <memberdef kind="function" id="group___curves_1gaf733009b4478009aba1743d320d31538" prot="public" static="no" const="no" explicit="no" inline="no" virt="non-virtual">
         <templateparamlist>
@@ -184,7 +279,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="112" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" bodystart="112" bodyend="123"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="159" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" bodystart="159" bodyend="170"/>
       </memberdef>
       </sectiondef>
       <sectiondef kind="">
@@ -212,7 +307,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Point.h" line="56" column="16"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Point.h" line="66" column="16"/>
       </memberdef>
       </sectiondef>
     <briefdescription>

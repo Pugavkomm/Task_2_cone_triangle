@@ -19,19 +19,27 @@
 #include <vector>
 #include <memory>
 #include <stdexcept>
+#include<stdlib.h>
 using ellipse = Curves::Ellipse<double>;
 using point = Curves::Point<double>;
 using coordinate = std::array<double, DIM>;
 const double PI_2 = 2 * M_PI;
+const int number_of_programm_parameters_= 4;
 
 double generate_random_value(double start = -10, double stop = 10){
 	return start + (stop - start) * static_cast<double>(rand()) / RAND_MAX;
 } 
+
+
 int main(int argc, char *argv[])
 {
-    double height = 10;
-    double radius = 5;
-    int number_of_segments = 10;
+
+    if (argc != number_of_programm_parameters_)
+        throw std::invalid_argument("The program accepts 3 numerical coefficients: height, radius, number of segments");
+    
+    double height = atoi(argv[1]);
+    double radius = atoi(argv[2]);
+    int number_of_segments = atoi(argv[3]);
     double step_parameter = PI_2 / number_of_segments;
     ellipse circle(coordinate{0, 0, 0}, coordinate{radius, radius, 0});
     point center(coordinate{0, 0, 0});

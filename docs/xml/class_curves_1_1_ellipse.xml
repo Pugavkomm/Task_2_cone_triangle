@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="27" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="27" bodyend="27"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" line="27" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" bodystart="27" bodyend="27"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1af4e9c29eed7153de481764969b4bc709" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type></type>
@@ -62,7 +62,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="34" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="34" bodyend="34"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" line="34" column="9" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" bodystart="34" bodyend="34"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a38d49fc9a9baa42119c3e9bb24627c0b" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -93,7 +93,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="41" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="67" bodyend="71"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" line="41" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" bodystart="67" bodyend="71"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a73a6adf568771450466bde396a5b88b2" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type><ref refid="class_curves_1_1_point" kindref="compound">Point</ref>&lt; T &gt;</type>
@@ -124,7 +124,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="48" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="60" bodyend="64"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" line="48" column="23" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" bodystart="60" bodyend="64"/>
       </memberdef>
       <memberdef kind="function" id="class_curves_1_1_ellipse_1a5d155da02860d4453e9bfb25a60f502e" prot="public" static="no" const="no" explicit="no" inline="no" virt="virtual">
         <type>std::string</type>
@@ -142,7 +142,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="54" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="74" bodyend="76"/>
+        <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" line="54" column="29" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" bodystart="74" bodyend="76"/>
       </memberdef>
       </sectiondef>
     <briefdescription>
@@ -186,7 +186,7 @@
         </childnode>
       </node>
     </collaborationgraph>
-    <location file="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" line="22" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_1_curve/include/Ellipse.h" bodystart="22" bodyend="55"/>
+    <location file="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" line="22" column="5" bodyfile="/home/mech/projects/cadexcharnger/Task_2_cone_triangle/include/Ellipse.h" bodystart="22" bodyend="55"/>
     <listofallmembers>
       <member refid="class_curves_1_1_curve_1a30d8d061cd229bfe4295b40d0e4d19cd" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Curve</name></member>
       <member refid="class_curves_1_1_curve_1ac8237badf37cd235b0dc054bb34b15df" prot="public" virt="non-virtual"><scope>Curves::Ellipse</scope><name>Curve</name></member>
