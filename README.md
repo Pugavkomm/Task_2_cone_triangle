@@ -15,6 +15,12 @@ _Getting the coordinates is fairly easy to do. Point coordinates are always know
 
 `make` -> output main
 
+## Run 
+`./output/main`
+`./main height radius number_of_segments`
+
+
+
 ## Structure
 ```
 |- ./
